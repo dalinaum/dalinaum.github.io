@@ -128,7 +128,7 @@ var HelloWorld = React.createClass({
 });
 {% endhighlight %}
 
-여기에서 `Welcome to React Native!`를 `Hello React Native!`로 바꾸자. 바꾼 후에 `Xcode`에서 `Cmd+R`를 눌러 앱을 다시 수행시키자.
+여기에서 `Welcome to React Native!`를 `Hello React Native!`로 바꾸자. 바꾼 후에 에물레이터에서 `Cmd+R`를 눌러 앱을 업데이트하면 다시 컴파일 할 필요없이 앱이 갱신된다.
 
 [react]:        http://facebook.github.io/react/
 [xcode]:        https://developer.apple.com/xcode/downloads/
