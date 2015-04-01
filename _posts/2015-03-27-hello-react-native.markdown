@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "안녕 React Native"
-date:   2015-03-27 16:33:06
+date:   2015-03-27 16:33:06 +0900
 categories: react ios
 ---
 페이스북이 드디어 [React Native][react-native]를 발표했다. 자바스크립트 플랫폼 [React][react]에서 네이티브 애플리케이션을 개발할 수 있게 하는 기술이다. 안드로이드 환경에 대해서 얘기했던 키노트와는 달리 공개된 코드는 iOS 전용이고 Mac 환경만 출시되었다. 그렇기 때문에 React Native를 사용하기 위해 맥과 [Xcode][xcode]와 [Homebrew][homebrew]가 필요하다.

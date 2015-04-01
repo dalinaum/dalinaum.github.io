@@ -8,6 +8,8 @@ url: "http://dalinaum.github.io" # the base hostname & protocol for your site
 twitter_username: dalinaum
 github_username: dalinaum
 
+timezone: Asia/Seoul
+
 # Build settings
 markdown: redcarpet
 pygments: true
