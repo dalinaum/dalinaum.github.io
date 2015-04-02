@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reactive Native 머지 잔혹사"
+title:  "React Native 머지 잔혹사"
 date:   2015-04-02 05:47:00 +0900
 categories: react ios
 ---
