@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "유닛 테스트는 충분하지 않습니다."
-date:   2015-04-11 17:00:00 +0900
+date:   2015-04-11 16:52:00 +0900
 categories: programming
 ---
 
