@@ -9,7 +9,11 @@ categories: android
 
 이미지가 캐쉬에 있는 경우에는 `GlideBitmapDrawable`을 가질 수 있습니다. 그렇지 않은 경우에는 `TransitionDrawable`을 가질 수도 있는데 이 경우에는 레이어에 `GlideBitmapDrawable`을 직접 가지는 경우와 `SquaringDrawable`을 가지는 경우를 보았습니다.
 
-이 경우들을 상정하고 작성한 코드는 아래와 같습니다. `instanceOfDrawable`가 도배되어 좀 더러운 코드입니다.
+ 1. `GlideBitmapDrawable`는 실제 비트맵을 가지고 있는 `Drawable`입니다.
+ 1. `TransitionDrawable`는 아직 로드가 되지 않은 비트맵에 대해 에니메이션을 제공하기 위한 `Drawable`입니다.
+ 1. `SquaringDrawable`은 래핑 객체로 정사각형을 위한 객체로 보입니다. (확인하지 않음.)
+
+이 경우들을 상정하고 작성한 코드는 아래와 같습니다. `instanceOf`가 도배되어 좀 더러운 코드입니다.
 
 ```
 Bitmap bitmap = null;
