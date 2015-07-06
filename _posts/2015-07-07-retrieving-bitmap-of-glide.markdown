@@ -28,11 +28,10 @@ if (drawable instanceof GlideBitmapDrawable) {
         if (child instanceof GlideBitmapDrawable) {
             bitmap = ((GlideBitmapDrawable) child).getBitmap();
             break;
-        } else if (child instanceof SquaringDrawable) {
-            if (child.getCurrent() instanceof GlideBitmapDrawable) {
-                bitmap = ((GlideBitmapDrawable) child.getCurrent()).getBitmap();
-                break;
-            }
+        } else if (child instanceof SquaringDrawable
+                && child.getCurrent() instanceof GlideBitmapDrawable) {
+            bitmap = ((GlideBitmapDrawable) child.getCurrent()).getBitmap();
+            break;
         }
     }
 } else if (drawable instanceof SquaringDrawable) {
