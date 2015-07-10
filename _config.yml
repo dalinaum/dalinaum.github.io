@@ -11,4 +11,5 @@ timezone: Asia/Seoul
 
 # Build settings
 markdown: redcarpet
+  extensions: [footnotes]
 pygments: true
