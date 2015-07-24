@@ -29,14 +29,20 @@ permalink: /about/
 * [Add homebrew instructions to README.md](https://github.com/facebook/fb-adb/commit/fbe87a72b68a9b69af803fb1dd06903a93d850ee)
 * [Apply markdown on README.](https://github.com/facebook/fb-adb/commit/7d50496093537543b30f5a8a40b204048810682f)
 
-### Homebrew Head-Only
-* [kati: new formula](https://github.com/Homebrew/homebrew-head-only/commit/a30cd3c1b015e0480de2878736140f3184d71971)
-* [fb-adb: new formula](https://github.com/Homebrew/homebrew-head-only/commit/48386b907d63ca96ecdef38f985210b04a090ccf)
-
 ### WebPack Samples for 1pixel
 * [Support .woff2 extension in 05-code-splitting](https://github.com/gunta/webpack-samples-1pixel/commit/47c3b2578032b179b3e6dd0bb8363fd389ab778c)
 * [Update package.json for 04-coffee-less-jade](https://github.com/gunta/webpack-samples-1pixel/commit/ee1ae7fc08360974de6df30f147d821dafbb49b1)
 * [Support .woff2 extension.](https://github.com/gunta/webpack-samples-1pixel/commit/7ff92710d441cb0b8fd41e9ca7876df266c1c937)
+
+### Homebrew
+* [fb-adb 1.4.4](https://github.com/Homebrew/homebrew/commit/9c3ab970b1a023d6db718e27e558aab2dbc97af7)
+* [fb-adb 1.2.0 (new formula)](https://github.com/Homebrew/homebrew/commit/2f9d15464f09c00830f1a703fbaf2109d1deaddc)
+* [git: set PERL_PATH](https://github.com/Homebrew/homebrew/commit/d7e768f2c0edfbf7d0e94f21bce6a271edf4dcc4)
+* [upgrade icarus-verilog to 0.9.3](https://github.com/Homebrew/homebrew/commit/5ebfeb52a9e589c41693aeb3731f66f9c812959b)
+
+### Homebrew Head-Only
+* [kati: new formula](https://github.com/Homebrew/homebrew-head-only/commit/a30cd3c1b015e0480de2878736140f3184d71971)
+* [fb-adb: new formula](https://github.com/Homebrew/homebrew-head-only/commit/48386b907d63ca96ecdef38f985210b04a090ccf)
 
 ### Cocos2d-x Docs
 * [Polish some sentences](https://github.com/chukong/cocos-docs/commit/940b18aa71bb86f27b6e3860f209f2896edf5a0f)
