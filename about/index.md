@@ -62,3 +62,6 @@ permalink: /about/
 
 ### Fresco Docs KR
 * [Update index.md](https://github.com/recrack/fresco-docs-kr/commit/8096b6ef9f220ad20540c9182eeb3f6acd6a39ed)
+
+### Nuclide
+* [Modify .gitignore](https://github.com/facebook/nuclide/commit/854eb2d764353c500e47e67c4adc7e68ce68abcc)
