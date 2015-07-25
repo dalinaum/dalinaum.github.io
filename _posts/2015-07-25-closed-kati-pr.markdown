@@ -22,4 +22,4 @@ As for the formatting change, I'd slightly prefer the current style because it l
 
 기분은 상했지만 목표를 좁게 수정해서 일관성없는 부분만 수정하고 원래 컨텐츠를 전혀 수정하지 않는 [커밋](https://github.com/dalinaum/kati/commit/7c80f7a1111336e0d2cb2ad5ef3907003b2af502)을 보내는 타협안을 제시했는데 답변은 [이슈 닫음](https://github.com/google/kati/pull/12#issuecomment-124817492)이었다.
 
-정말 실망스럽다. 예전에 [Angular.js PR](https://github.com/angular/angular.js/pull/7589) 때 이후로 정말 나쁜 PR 경험을 해본다. (그러고 보니 둘다 구글 제품이다.)
+정말 실망스럽다. 예전에 [Angular.js PR](https://github.com/angular/angular.js/pull/7589) 때 이후로 정말 나쁜 PR 경험을 해본다. (그 때는 늦게 올라왔던 PR을 머지하고 내 커밋을 중복된 PR이라고 클로즈했다.) 그러고 보니 둘다 구글 제품이다.
