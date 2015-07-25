@@ -10,12 +10,20 @@ categories: build
 ```
 Hmm I'm not sure if I like this change.
 
-I don't want to add a section whenever a new package manager starts supporting kati.
-I'm not sure it's a good idea to use kati provided by a package manager. kati is in a very early stage of development so many changes could be done in near future.
-I think a user of package manager knows how to install a program with it.
-Once kati becomes more stable, it's OK to mention package managers. I think just adding a sentence like "or, you can use your package manager like homebrew." would be sufficient.
+I don't want to add a section whenever a new package manager starts
+supporting kati.
 
-As for the formatting change, I'd slightly prefer the current style because it looks prettier as a text file.
+I'm not sure it's a good idea to use kati provided by a package manager.
+kati is in a very early stage of development so many changes could be
+done in near future.
+
+I think a user of package manager knows how to install a program with it.
+Once kati becomes more stable, it's OK to mention package managers. I
+think just adding a sentence like "or, you can use your package manager
+like homebrew." would be sufficient.
+
+As for the formatting change, I'd slightly prefer the current style
+because it looks prettier as a text file.
 ```
 
 아무 것도 수용할 수 없다는 표현이다.
