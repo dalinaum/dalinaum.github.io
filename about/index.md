@@ -4,33 +4,31 @@ title: About
 permalink: /about/
 ---
 
-## Interviews (News papers)
+## Interviews
 
-### 마이크로소프트웨어
+### Microsoftware (마이크로소프트웨어)
 * [구글 I/O 2015: 구글이 꿈꾸는 세상](https://www.imaso.co.kr/news/article_view.php?article_idx=20150727102706)
 
-### 조선일보
+### Chosun Biz (조선 비즈)
 * [김용욱 안드로이드 커뮤니티 운영자 "AOSP의 핵심은 공개, 서비스와 앱은 비공개"](http://biz.chosun.com/site/data/html_dir/2014/10/29/2014102903192.html)
 
-### 블로터
+### Bloter (블로터)
 * [페이스북의 인기 오픈소스 기술, ‘리액트’란?](http://www.bloter.net/archives/233564)
 * [초보 개발자가 오픈소스에 기여하는 5단계](http://www.bloter.net/archives/197960)
 * [구글이 치켜세운 안드로이드 개발도구, ‘그래들’](http://www.bloter.net/archives/191407)
 
-### ZDNet
+### ZDNet Korea (지디넷 코리아)
 * [아쉬운 구글I/O...안드로이드개발자의 관전평](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20150608082554)
 * [국내 개발자의 안드로이드L 사용 후일담](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20140806140729)
 
-### 주간동아
+### Weekly Donga (주간동아)
 * [잘 사귄 ‘net 脈’ 열 친척 안 부러워!](http://weekly.donga.com/docs/magazine/weekly/2008/03/26/200803260500016/200803260500016_1.html)
 
-## Interviews (Podcasts)
-
-### 나는 프로그래머다
+### I am a programmer (나는 프로그래머다)
 * [Google I/O 특집](http://iamprogrammer.io/google-io-%ED%8A%B9%EC%A7%91/)
 
-## Interviews (IPTV)
-* [140206 Developer In 2014 : [특집 기획방송]Developer IN ② 김용욱: 생각을 모으는 구글, 안드로이드 전문가](https://www.youtube.com/watch?v=hMHGASu0848)
+### Electronic Times U-TV (전자신문 U-TV)
+* [Developer IN ② 김용욱: 생각을 모으는 구글, 안드로이드 전문가](https://www.youtube.com/watch?v=hMHGASu0848)
 
 ## Talks
 * [GKAC 2015 Apr.: RxAndroid](https://www.youtube.com/watch?v=FpIqbVTnB30)
