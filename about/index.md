@@ -21,6 +21,9 @@ permalink: /about/
 * [아쉬운 구글I/O...안드로이드개발자의 관전평](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20150608082554)
 * [국내 개발자의 안드로이드L 사용 후일담](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20140806140729)
 
+### 주간동아
+* [잘 사귄 ‘net 脈’ 열 친척 안 부러워!](http://weekly.donga.com/docs/magazine/weekly/2008/03/26/200803260500016/200803260500016_1.html)
+
 ## Interviews (Podcasts)
 
 ### 나는 프로그래머다
