@@ -41,6 +41,8 @@ permalink: /about/
 
 * [Atom Android](https://github.com/dalinaum/atom-android)
 * [IRCCLoud wrapper for OS X, Windows and Linux](https://github.com/dalinaum/IRCCloud)
+* [PinterestLikeAdapterView](https://github.com/GDG-Korea/PinterestLikeAdapterView)
+* [HelloRx](https://github.com/GDG-Korea/HelloRx)
 
 ## Contrubuting
 
