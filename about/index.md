@@ -4,12 +4,42 @@ title: About
 permalink: /about/
 ---
 
-## Projects
+## Interviews (News papers)
+
+### 마이크로소프트웨어
+* [구글 I/O 2015: 구글이 꿈꾸는 세상](https://www.imaso.co.kr/news/article_view.php?article_idx=20150727102706)
+
+### 조선일보
+* [김용욱 안드로이드 커뮤니티 운영자 "AOSP의 핵심은 공개, 서비스와 앱은 비공개"](http://biz.chosun.com/site/data/html_dir/2014/10/29/2014102903192.html)
+
+### 블로터
+* [페이스북의 인기 오픈소스 기술, ‘리액트’란?](http://www.bloter.net/archives/233564)
+* [초보 개발자가 오픈소스에 기여하는 5단계](http://www.bloter.net/archives/197960)
+* [구글이 치켜세운 안드로이드 개발도구, ‘그래들’](http://www.bloter.net/archives/191407)
+
+### ZDNet
+* [아쉬운 구글I/O...안드로이드개발자의 관전평](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20150608082554)
+* [국내 개발자의 안드로이드L 사용 후일담](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20140806140729)
+
+## Interviews (Podcasts)
+
+### 나는 프로그래머다
+* [Google I/O 특집](http://iamprogrammer.io/google-io-%ED%8A%B9%EC%A7%91/)
+
+## Interviews (IPTV)
+* [140206 Developer In 2014 : [특집 기획방송]Developer IN ② 김용욱: 생각을 모으는 구글, 안드로이드 전문가](https://www.youtube.com/watch?v=hMHGASu0848)
+
+## Talks
+* [GKAC 2015 Apr.: RxAndroid](https://www.youtube.com/watch?v=FpIqbVTnB30)
+* [GKAC 2014 - Android Wear Native App 개발](https://www.youtube.com/watch?v=Kp15lJN7D8o)
+* [GTUG 서울: Android Input Method](https://www.youtube.com/watch?v=WSBskhSrB0Q)
+
+## Maintaining
 
 * [Atom Android](https://github.com/dalinaum/atom-android)
 * [IRCCLoud wrapper for OS X, Windows and Linux](https://github.com/dalinaum/IRCCloud)
 
-## Commits
+## Contrubuting
 
 ### React Native
 * [[Text] Get the system font instead of Helvetica programmatically and add a virtual fontName called "System"](https://github.com/facebook/react-native/commit/fc059857e260abe73a7f169768c94a28a32ecbf1)
@@ -66,29 +96,4 @@ permalink: /about/
 ### Nuclide
 * [Modify .gitignore](https://github.com/facebook/nuclide/commit/854eb2d764353c500e47e67c4adc7e68ce68abcc)
 
-## Interviews (News papers)
 
-### 조선일보
-* [김용욱 안드로이드 커뮤니티 운영자 "AOSP의 핵심은 공개, 서비스와 앱은 비공개"](http://biz.chosun.com/site/data/html_dir/2014/10/29/2014102903192.html)
-
-### 블로터
-* [페이스북의 인기 오픈소스 기술, ‘리액트’란?](http://www.bloter.net/archives/233564)
-* [초보 개발자가 오픈소스에 기여하는 5단계](http://www.bloter.net/archives/197960)
-* [구글이 치켜세운 안드로이드 개발도구, ‘그래들’](http://www.bloter.net/archives/191407)
-
-### ZDNet
-* [아쉬운 구글I/O...안드로이드개발자의 관전평](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20150608082554)
-* [국내 개발자의 안드로이드L 사용 후일담](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20140806140729)
-
-## Interviews (Podcasts)
-
-### 나는 프로그래머다
-* [Google I/O 특집](http://iamprogrammer.io/google-io-%ED%8A%B9%EC%A7%91/)
-
-## Interviews (IPTV)
-* [140206 Developer In 2014 : [특집 기획방송]Developer IN ② 김용욱: 생각을 모으는 구글, 안드로이드 전문가](https://www.youtube.com/watch?v=hMHGASu0848)
-
-## Talks
-* [GKAC 2015 Apr.: RxAndroid](https://www.youtube.com/watch?v=FpIqbVTnB30)
-* [GKAC 2014 - Android Wear Native App 개발](https://www.youtube.com/watch?v=Kp15lJN7D8o)
-* [GTUG 서울: Android Input Method](https://www.youtube.com/watch?v=WSBskhSrB0Q)
