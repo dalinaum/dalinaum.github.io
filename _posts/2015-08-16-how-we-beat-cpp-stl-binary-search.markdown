@@ -97,7 +97,7 @@ template <class T> INLINE size_t fast_upper_bound0(const vector<T>& vec, T value
 }
 ```
 
-표준 C++ 라이브러리(libstdc++)에서 헤더 파일 stl_algo.h을 찾아 `upper_bound()`의 내부
+표준 C++ 라이브러리(libstdc++)에서 헤더 파일 `stl_algo.h`을 찾아 `upper_bound()` 안의
 반복문을 살펴보자...
 
 ```
