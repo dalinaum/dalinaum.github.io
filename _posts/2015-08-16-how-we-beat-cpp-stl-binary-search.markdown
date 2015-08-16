@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "렘은 어떻게 C++ STL 이진 탐색을 이겼나?"
+title:  "Realm은 어떻게 C++ STL 이진 탐색을 이겼나?"
 date:   2015-08-16 23:03:00 +0900
 categories: engineering
 ---
