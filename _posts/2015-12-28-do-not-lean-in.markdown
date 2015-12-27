@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "린인하지 말아요."
+title:  "린인(Lean in): 린인하지 말아요."
 date:   2015-12-28 06:30:00 +0900
 categories: book
 ---
