@@ -11,4 +11,4 @@ timezone: Asia/Seoul
 
 # Build settings
 markdown: redcarpet
-pygments: true
+highlighter: rouge
