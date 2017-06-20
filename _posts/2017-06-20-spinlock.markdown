@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "스핀락의 구현"
-date:   2015-06-20 14:11:06 +0900
+date:   2017-06-20 14:11:06 +0900
 categories: os
 ---
 
