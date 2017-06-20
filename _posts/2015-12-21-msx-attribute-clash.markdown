@@ -5,7 +5,7 @@ date:   2015-12-21 03:25:00 +0900
 categories: graphic
 ---
 
-<center>![MSX Attribute clash]({{ site.url }}/assets/msx-attribute-clash.gif)</center>
+![MSX Attribute clash](/assets/msx-attribute-clash.gif)
 
 초기 8비트 시절을 이야기할 때 빼어먹을 수 없는 회사가 있는데 싱클레어 리서치다. 영국 캠프리지에 있던 작은 회사는 PC 산업이 성공하는데 혁신적인 발명을 했다. (이상하게 영국 캠브리지는 컴퓨터 그래픽과 연관이 깊은 지역인 것 같다. 최근 게임들을 위한 실시간 글로벌 일루미네이션 (광역 조명)도 이 지역에서 많이 연구되었다.)
 
