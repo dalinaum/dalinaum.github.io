@@ -5,7 +5,7 @@ date:   2018-02-24 02:00:00 +0900
 categories: android
 ---
 
-2018년 2월 5일 [구글은 안드로이드 KTX를 발표](https://android-developers.googleblog.com/2018/02/introducing-android-ktx-even-sweeter.html)했습니다. 구글의 문장을 인용하면 다음과 같다.
+2018년 2월 5일 [구글은 안드로이드 KTX를 발표](https://android-developers.googleblog.com/2018/02/introducing-android-ktx-even-sweeter.html)했는데 구글의 소개 문장을 인용하면 다음과 같다.
 
 > Android KTX provides a nice API layer on top of both Android framework and Support Library to make writing your Kotlin code more natural.
 
