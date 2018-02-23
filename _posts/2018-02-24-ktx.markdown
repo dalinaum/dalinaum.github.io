@@ -21,7 +21,7 @@ val uri = Uri.parse(myUriString)
 
 코틀린 코드도 길지 않다.
 
-```
+``` kotlin
 val uri = myUriString.toUri()
 ```
 
@@ -29,7 +29,7 @@ val uri = myUriString.toUri()
 
 하지만 `Uri` 객체의 스태틱 메서드를 참고하지 않고 `String`에서 `Uri`로 변환을 한다는게 재밌다. (코딩에서 재미도 포기할 수 없다.) 코틀린 코드를 작업할 때는 스태틱 메서드를 잘 만들지 않기 때문에 이런 확장을 쓰는 것은 컨벤션 통합에서 의미가 있다.
 
-```
+``` kotlin
 inline fun String.toUri(): Uri = Uri.parse(this)
 ```
 
@@ -58,7 +58,7 @@ inline fun String.toUri(): Uri {
 
 다음으로 볼 것은 공유 프리퍼런스다.
 
-```
+``` kotlin
 sharedPreferences.edit()
   .putBoolean(key, value)
   .apply()
@@ -66,7 +66,7 @@ sharedPreferences.edit()
 
 이 코드는 아래의 형식으로 변환된다.
 
-```
+``` kotlin
 sharedPreferences.edit {
   putBoolean(key, value)
 }
@@ -78,7 +78,7 @@ sharedPreferences.edit {
 
 이제 구현을 보자.
 
-```
+``` kotlin
 inline fun SharedPreferences.edit(action: SharedPreferences.Editor.() -> Unit) {
   val editor = edit()
   action(editor)
@@ -96,7 +96,7 @@ inline fun SharedPreferences.edit(action: SharedPreferences.Editor.() -> Unit) {
 
 조금 더 흥미로운 예제를 살펴보자.
 
-```
+``` kotlin
 val pathDifference = Path(myPath1).apply {
   op(myPath2, Path.Op.DIFFERENCE)
 }
@@ -113,7 +113,7 @@ canvas.apply {
 
 KTX의 예제를 볼 차례다.
 
-```
+``` kotlin
 val pathDifference = myPath1 - myPath2
 
 canvas.withTranslation(y = 100F) {
@@ -127,7 +127,7 @@ canvas.withTranslation(y = 100F) {
 
 실제 코드의 내용을 살펴보기 전에 `Canvas.withSave`를 먼저 살펴보자. 이 코드가 `Canvas`에 대한 KTX 확장의 기본형이다.
 
-```
+``` kotlin
 inline fun Canvas.withSave(block: Canvas.() -> Unit) {
     val checkpoint = save()
     try {
@@ -142,7 +142,7 @@ inline fun Canvas.withSave(block: Canvas.() -> Unit) {
 
 이제 `Canvas.withTranslation`을 살펴보자.
 
-```
+``` kotlin
 inline fun Canvas.withTranslation(
     x: Float = 0.0f,
     y: Float = 0.0f,
@@ -162,7 +162,7 @@ inline fun Canvas.withTranslation(
 
 유사한 패턴들이 `Cavas`에 적용되어 있다.
 
-```
+``` kotlin
 inline fun Canvas.withRotation(
     degrees: Float = 0.0f,
     pivotX: Float = 0.0f,
@@ -181,7 +181,7 @@ inline fun Canvas.withRotation(
 
 개인적으로 이 패턴이 가장 효율적으로 사용되었다고 생각되는 코드가 있는데 `View.updatePadding`이다.
 
-```
+``` kotlin
 fun View.updatePadding(
     @Px left: Int = paddingLeft,
     @Px top: Int = paddingTop,
