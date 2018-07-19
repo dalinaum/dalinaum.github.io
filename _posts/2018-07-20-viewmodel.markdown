@@ -11,7 +11,7 @@ categories: android
 
 `ViewModel`의 사용법이 생소하다면 먼저 사용법을 설명한 글들을 읽고 오자.
 
-```
+```kotlin
 val viewModel = ViewModelProviders.of(this).get(UserViewModel::class.java)
 ```
 
@@ -19,7 +19,7 @@ val viewModel = ViewModelProviders.of(this).get(UserViewModel::class.java)
 
 `ViewModelProviders.of()`을 따라 가자.
 
-```
+```java
 public static ViewModelProvider of(@NonNull FragmentActivity activity) {
     return of(activity, null);
 }
@@ -27,7 +27,7 @@ public static ViewModelProvider of(@NonNull FragmentActivity activity) {
 
 시그내쳐만 다른 동명의 메서드로 호출한다.
 
-```
+```java
 public static ViewModelProvider of(@NonNull FragmentActivity activity,
         @Nullable Factory factory) {
     Application application = checkApplication(activity);
@@ -40,7 +40,7 @@ public static ViewModelProvider of(@NonNull FragmentActivity activity,
 
 `checkApplication`은 액티비티를 통해 애플리케이션을 가져온다.
 
-```
+```java
 private static Application checkApplication(Activity activity) {
     Application application = activity.getApplication();
     if (application == null) {
@@ -53,7 +53,7 @@ private static Application checkApplication(Activity activity) {
 
 애플리케이션을 가져온 후 `ViewModelProvider.AndroidViewModelFactory.getInstance(application)`를 이용하여 팩토리를 만든다.
 
-```
+```java
 public static AndroidViewModelFactory getInstance(@NonNull Application application) {
     if (sInstance == null) {
         sInstance = new AndroidViewModelFactory(application);
@@ -66,7 +66,7 @@ public static AndroidViewModelFactory getInstance(@NonNull Application applicati
 
 팩토리는 `create` 메서드를 가지고 있다.
 
-```
+```java
 public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
     if (AndroidViewModel.class.isAssignableFrom(modelClass)) {
         //noinspection TryWithIdenticalCatches
@@ -88,7 +88,7 @@ public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
 
 `create` 메서드의 핵심적인 부분은 객체를 생성하는 부분이다.
 
-```
+```java
 return modelClass.getConstructor(Application.class).newInstance(mApplication);
 ```
 
@@ -96,7 +96,7 @@ return modelClass.getConstructor(Application.class).newInstance(mApplication);
 
 다시 `ViewModelProviders.of()`로 돌아가자.
 
-```
+```java
 public static ViewModelProvider of(@NonNull FragmentActivity activity,
         @Nullable Factory factory) {
     ...
@@ -108,7 +108,7 @@ public static ViewModelProvider of(@NonNull FragmentActivity activity,
 
 `factory`는 싱글턴으로 효율적으로 가져올 수 있다는 것을 확인했기 때문에 남은 것은 `ViewModelStores.of(activity)`가 재사용할 수 있는지 확인하자.
 
-```
+```java
 public static ViewModelStore of(@NonNull FragmentActivity activity) {
     if (activity instanceof ViewModelStoreOwner) {
         return ((ViewModelStoreOwner) activity).getViewModelStore();
@@ -126,7 +126,7 @@ public static ViewModelStore of(@NonNull FragmentActivity activity) {
 
 그럼 `holderFragmentFor(activity)`가 호출되었다고 볼 수 있다.
 
-```
+```java
 @RestrictTo(RestrictTo.Scope.LIBRARY_GROUP)
 public static HolderFragment holderFragmentFor(FragmentActivity activity) {
     return sHolderFragmentManager.holderFragmentFor(activity);
@@ -135,7 +135,7 @@ public static HolderFragment holderFragmentFor(FragmentActivity activity) {
 
 `HolderFragmentManager.holderFragmentFor()`로 포워딩된다.
 
-```
+```java
 HolderFragment holderFragmentFor(FragmentActivity activity) {
     FragmentManager fm = activity.getSupportFragmentManager();
     HolderFragment holder = findHolderFragment(fm);
@@ -165,7 +165,7 @@ HolderFragment holderFragmentFor(FragmentActivity activity) {
 
 `HolderFragment`를 생성하는 부분은 다음과 같다.
 
-```
+```java
 private static HolderFragment createHolderFragment(FragmentManager fragmentManager) {
     HolderFragment holder = new HolderFragment();
     fragmentManager.beginTransaction().add(holder, HOLDER_TAG).commitAllowingStateLoss();
@@ -177,7 +177,7 @@ private static HolderFragment createHolderFragment(FragmentManager fragmentManag
 
 정답을 알기 위해 `HolderFragment`의 일부를 살펴보자.
 
-```
+```java
 public class HolderFragment extends Fragment implements ViewModelStoreOwner {
     ...
     private ViewModelStore mViewModelStore = new ViewModelStore();
@@ -208,7 +208,7 @@ public class HolderFragment extends Fragment implements ViewModelStoreOwner {
 
 생성자에 무언가 보인다.
 
-```
+```java
 public HolderFragment() {
     setRetainInstance(true);
 }
@@ -218,13 +218,13 @@ public HolderFragment() {
 
 그 다음으로 `HolderFragment`가 `ViewModel`들을 가지고 있는 것을 확인 할 수 있다.
 
-```
+```java
 private ViewModelStore mViewModelStore = new ViewModelStore();
 ```
 
 `ViewModelStore`가 해쉬맵으로 `ViewModel`등을 가지고 있다.
 
-```
+```java
 public class ViewModelStore {
     ...
     private final HashMap<String, ViewModel> mMap = new HashMap<>();
@@ -245,7 +245,7 @@ public class ViewModelStore {
 
 `HolderFragment`가 가진 `onCreate`과 `onDestroy`를 통해 생명주기도 관리한다.
 
-```
+```java
 @Override
 public void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -263,7 +263,7 @@ public void onDestroy() {
 
 `HolderFragment`가 생성될 때 `HolderFragmentManager.holderFragmentCreated()`를 왜 호출했을까?
 
-```
+```java
 void holderFragmentCreated(Fragment holderFragment) {
     Fragment parentFragment = holderFragment.getParentFragment();
     if (parentFragment != null) {
@@ -282,7 +282,7 @@ void holderFragmentCreated(Fragment holderFragment) {
 
 그럼 이제 `HolderFragment`를 생성하거나 가져오는 부분으로 돌아가 정보를 업데이트 하자.
 
-```
+```java
 HolderFragment holderFragmentFor(FragmentActivity activity) {
     FragmentManager fm = activity.getSupportFragmentManager();
     HolderFragment holder = findHolderFragment(fm);
@@ -310,7 +310,7 @@ HolderFragment holderFragmentFor(FragmentActivity activity) {
 
 다시 위로 올라가 `ViewModelProvider.of()`로 가자.
 
-```
+```java
 public static ViewModelProvider of(@NonNull FragmentActivity activity,
         @Nullable Factory factory) {
     ...
@@ -322,13 +322,13 @@ public static ViewModelProvider of(@NonNull FragmentActivity activity,
 
 한 단계 더 올라가자.
 
-```
+```kotlin
 val viewModel = ViewModelProviders.of(this).get(UserViewModel::class.java)
 ```
 
 `ViewProvider.get()` 메서드가 호출되었다. 이 메서드의 모양은 아래와 같다.
 
-```
+```java
 public <T extends ViewModel> T get(@NonNull Class<T> modelClass) {
     String canonicalName = modelClass.getCanonicalName();
     if (canonicalName == null) {
@@ -336,7 +336,6 @@ public <T extends ViewModel> T get(@NonNull Class<T> modelClass) {
     }
     return get(DEFAULT_KEY + ":" + canonicalName, modelClass);
 }
-
 
 public <T extends ViewModel> T get(@NonNull String key, @NonNull Class<T> modelClass) {
     ViewModel viewModel = mViewModelStore.get(key);
