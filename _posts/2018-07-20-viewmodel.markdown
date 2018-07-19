@@ -305,7 +305,7 @@ HolderFragment holderFragmentFor(FragmentActivity activity) {
 ```
 
 1. `findHolderFragment`를 이용해서 이미 그 액티비티에 `HolderFragment`가 있는지 확인한다.
-2. ~~ `mNotCommittedActivityHolders`에 남아있는 `HolderFragment`가 있는지 확인한다. ~~ `mNotCommittedActivityHolders`를 확인하여 아직 `onCreate`가 호출되지 않은 `HolderFragment`는 재사용한다.
+2. ~~~ `mNotCommittedActivityHolders`에 남아있는 `HolderFragment`가 있는지 확인한다. ~~~ `mNotCommittedActivityHolders`를 확인하여 아직 `onCreate`가 호출되지 않은 `HolderFragment`는 재사용한다.
 3. `HolderFragment`를 만들고 `mNotCommittedActivityHolders`에 넣어둔다.
 
 다시 위로 올라가 `ViewModelProvider.of()`로 가자.
