@@ -20,9 +20,9 @@ permalink: /about/
 
 ## Talks
 
-* Several Realm World Tours & Realm meetups
 * [Realm은 어떻게 효율적인 데이터베이스를 만들었나?](https://deview.kr/2017/schedule/206) - Deview 2017
 * [React Everywhere](https://deview.kr/2015/schedule#session/88) - Deview 2015
 * [RxAndroid](https://www.youtube.com/watch?v=FpIqbVTnB30) - GDG Android
 * [Android Wear Native App 개발](https://www.youtube.com/watch?v=Kp15lJN7D8o) - GDG Android
 * [Android Input Method](https://www.youtube.com/watch?v=WSBskhSrB0Q) - GDG Seoul
+* Numerous talks at Realm World Tours, Realm meetups and GDG events.
