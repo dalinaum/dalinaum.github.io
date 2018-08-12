@@ -19,7 +19,7 @@ REST API로 페이징을 하는 것을 보여주려는 것이 목적인데 간�
 
 JSON 요청을 정리하면 아래와 같은 형식이다.
 
-```JSON
+```json
 {
  "count": 949,
  "previous": null,
@@ -40,7 +40,7 @@ JSON 요청을 정리하면 아래와 같은 형식이다.
 }
 ```
 
-```Kotlin
+```kotlin
 data class Response(
  val count: Int,
  val previous: String,
@@ -57,9 +57,7 @@ data class Result(
 
 이 부분과 아래 부분은 Paging 라이브러리를 쓰지 않을 때와 동일하다.
 
-![Retrofit용 인터페이스]({{ "/assets/paging5.png" | absolute_url }})
-
-```Kotlin
+```kotlin
 interface PokeAPI {
  @GET("pokemon/")
  fun listPokemons(): Call<Response>
@@ -74,7 +72,7 @@ interface PokeAPI {
 
 인터페이스를 정의하는 방식도 일반적인 어댑터 패턴을 쓸 때와 크게 다르지 않다.
 
-```Kotlin
+```kotlin
 private class DiffItemCallback : DiffUtil.ItemCallback<Result>() {
  override fun areItemsTheSame(oldItem: Result, newItem: Result): Boolean =
  oldItem.url == newItem.url
