@@ -6,6 +6,12 @@ permalink: /about/
 
 ## Media
 
+* [자바 대안 코틀린을 대하는 우리의 자세](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20170614100135) - ZDNet Korea
+* [코틀린, 안드로이드 생태계 사로잡나](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20170614095146) - ZDNet Korea
+* [안드로이드 개발자, 왜 구글 파이어베이스에 놀라는가?](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20160526171640) - ZDNet Korea
+* ['구글I/O 2016' 인사이트 셰어링...구글I/O 다녀왔 '수다'](http://biz.chosun.com/site/data/html_dir/2016/05/24/2016052402004.html) - Chosun Biz
+* [Possible glitch sends Pokemon Go players to S. Korean city](https://www.apnews.com/db589db716124fdda96aff6f52de763d)- AP News
+* [배우고, 즐기고, 해결하고, 공유하라](http://www.zdnet.co.kr/column/column_view.asp?artice_id=20151109081650) - ZDNet Korea
 * [국정원 스마트폰 해킹 툴, 제대로 좀 알아보자](http://ppss.kr/archives/53191) - ㅍㅍㅅㅅ
 * [구글 I/O 2015: 구글이 꿈꾸는 세상](https://www.imaso.co.kr/news/article_view.php?article_idx=20150727102706) - Microsoftware
 * [김용욱 안드로이드 커뮤니티 운영자 "AOSP의 핵심은 공개, 서비스와 앱은 비공개"](http://biz.chosun.com/site/data/html_dir/2014/10/29/2014102903192.html) - Chosun Biz
