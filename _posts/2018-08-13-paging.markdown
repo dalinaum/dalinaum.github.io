@@ -70,7 +70,7 @@ interface PokeAPI {
 }
 ```
 
-인터페이스를 정의하는 방식도 일반적인 어댑터 패턴을 쓸 때와 크게 다르지 않다.
+REST 인터페이스를 정의하는 방식도 일반적인 어댑터 패턴을 쓸 때와 크게 다르지 않다.
 
 ```kotlin
 private class DiffItemCallback : DiffUtil.ItemCallback<Result>() {
@@ -83,7 +83,8 @@ private class DiffItemCallback : DiffUtil.ItemCallback<Result>() {
 
 페이징 라이브러리를 쓸 때 느껴지는 첫번째 큰 차이는 `DiffUtil.ItemCallback`을 구현해야한다는 점이다. `DiffUtil`을 사용하여 변경점을 확인한다.
 
-`areItemsTheSame`은 ID가 같은지 확인하여 같은 대상을 의미하는 객체인지 확인한다. 같은 대상이라도 갱신 시점 등에 따라 데이터의 내용이 다를 수 있기 때문에 `areContentsTheSame`을 호출하여 데이터의 변경을 알려주는 것이다.
+`areItemsTheSame`은 ID가 같은지 확인하여 같은 대상을 의미하는 객체인지 확인한다. 같은 대상이라도 갱신 시점 등에 따라 데이터의 내용이 다를 수 있기 때문에 `areContentsTheSame`을 호출하여 데이터의 변경을 확인하는 것이다.인스턴스 자체가 동일한지 비교하는 것은 의미가 없다
+ 데이터가 외부환경에서 오는 경우 같은 항목인데 인스턴스가 다른 일이 종종있기 때문이다.
 
 ```kotlin
 private class DataSource(private val pokeAPI: PokeAPI) : PageKeyedDataSource<String, Result>() {
@@ -111,7 +112,7 @@ Result>) {
 
  데이터를 가져온 후 `callback.onResult`를 호출하여 받아온 데이터와 다음에 사용할 키를 전달한다.
 
- 주의할 점은 `DataSource`가 자체적으로 데이터를 비동기상태로 가져오기 위해 백그라운드 스레드를 사용하기 때문에 `loadXXX`에서 UI 스레드등에서 사용하는 메서드를 호출해서는 안된다눈 점이다.
+ 주의할 점은 `DataSource`가 자체적으로 데이터를 비동기상태로 가져오기 위해 백그라운드 스레드를 사용하기 때문에 `loadXXX`에서 UI 스레드등에서 사용하는 메서드를 호출해서는 안된다는 점이다.
 
  ```kotlin
 private class Adapter : PagedListAdapter<Result, VieHolder>(DiffItemCallback()) {
@@ -169,4 +170,4 @@ override fun onCreate(savedInstanceState: Bundle?) {
 
 라이브 데이터는 새로운 페이지를 가져올 때 갱신되지 않는데 완전히 새로운 데이터 셋을 가져올 때만 변경되기 때문이다. 데이터 셋을 처음 가져올 때와 완전히 새로운 데이터를 가져올 때 만 observe가 호출된다.
 
-발표자료와 슬라이드는 [Github 저장소](https://github.com/dalinaum/paged-list-adpater-demo)를 참고하라.
+발표자료와 소스코드는 [Github 저장소](https://github.com/dalinaum/paged-list-adpater-demo)를 참고하라.
