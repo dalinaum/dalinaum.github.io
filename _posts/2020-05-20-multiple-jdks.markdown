@@ -56,8 +56,8 @@ export JDK_18="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home"
 export JDK_9="/Library/Java/JavaVirtualMachines/adoptopenjdk-9.jdk/Contents/Home"
 ```
 
-### 에필로그: sdkman
+### 에필로그: SDKMAN!
 
-이 글을 적는 동안은 [sdkman](https://sdkman.io/)의 존재를 몰랐다. 그런데 아래 블로깅을 읽어 보니 훨씬 편해 보인다. 내 손이 너무 좋아서 머리를 고생 안시켰네. 다음 설정 때는 sdkman을 가능한 사용해야 겠다.
+이 글을 적는 동안은 [SDKMAN!](https://sdkman.io/)의 존재를 몰랐다. 내 손이 너무 좋아서 머리를 고생 안시켰네. 다음 설정 때는 SDKMAN!을 가능한 사용해야 겠다.
 
- - https://phoby.github.io/sdkman/
+ - [SDK! 으로 Java 버전 관리하기](https://phoby.github.io/sdkman/)
