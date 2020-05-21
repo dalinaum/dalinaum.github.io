@@ -202,7 +202,7 @@ private void loadNextFrame() {
 
 아래는 `DelayTarget`의 일부이다.
 
-```Java
+```java
 @VisibleForTesting
 static class DelayTarget extends CustomTarget<Bitmap> {
   ...
