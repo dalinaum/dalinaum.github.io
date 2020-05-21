@@ -247,7 +247,7 @@ private class FrameLoaderCallback implements Handler.Callback {
 
 ### 로딩된 이미지를 다루는 GifFrameLoader#onFrameReady
 
-`GifFrameLoader#onFrameReady`가 호출되는 경우는 아래 두 경우에 해당 할 때 호출된다.
+아래 두 경우에 `GifFrameLoader#onFrameReady`가 호출된다.
 
 1. `loadNextFrame` 수행 시 `pendingTarget`이 있는 경우.
 1. `loadNextFrame`에서 리퀘스트 빌더를 통해 다음 프레임을 로딩하고 핸들러로 전달된 경우.
