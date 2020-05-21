@@ -30,7 +30,7 @@ brew cask install adoptopenjdk9
 
 참고로 나는 AdoptOpenJDK가 이상하게 너무나 느렸다. 어쩔 수 없으니 기다리자.
 
-### jenv 설정
+## jenv 설정
 
 jenv를 설정한다면 아래와 같이 등록하자. [jenv](https://www.jenv.be/)는 파이선의 pyenv나 루비의 rbenv 비해서는 사용성이 나쁜데 일단 패키지를 설치한 후 경로만 등록할 수 있다. 당연히 pyenv나 rbenv는 설치와 설정이 한번에 된다. 아무래도 자바가 오픈소스스럽게 배포하지 않고 Oracle 사이트에서 배포하는 방식도 있고 OpenJDK도 여러 구성원들이 배포하고 있어 배포가 깔끔하지 못한 것 같다.
 
@@ -44,7 +44,7 @@ jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-9.jdk/Contents/Home
 
 만약 jenv를 설치하길 원한다면 `brew install jenv`로 설치할 수 있다.
 
-### 환경 변수 설정
+## 환경 변수 설정
 
 설치한 자바에 맞추어 환경 변수를 아래와 같이 설정했다.
 
@@ -56,7 +56,7 @@ export JDK_18="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home"
 export JDK_9="/Library/Java/JavaVirtualMachines/adoptopenjdk-9.jdk/Contents/Home"
 ```
 
-### 에필로그: SDKMAN!
+## 에필로그: SDKMAN!
 
 이 글을 적는 동안은 [SDKMAN!](https://sdkman.io/)의 존재를 몰랐다. 내 손이 너무 좋아서 머리를 고생 안시켰네. 다음 설정 때는 SDKMAN!을 가능한 사용해야 겠다.
 
