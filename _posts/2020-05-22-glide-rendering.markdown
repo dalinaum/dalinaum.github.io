@@ -293,9 +293,9 @@ void onFrameReady(DelayTarget delayTarget) {
 1. 첫번째 프레임이 있다면 더 이상 필요없으니 제거한다.
 1. 현재 프레임을 과거 프레임으로 바꾼다.
 1. 로딩된 이미지를 현재 프레임으로 설정한다.
-1. 콜백 (`GifDrwable`)에게 `onFrameReady`로 통보한다.
+1. 콜백 (`GifDrawable`)에게 `onFrameReady`로 통보한다.
 1. 이전 프레임은 핸들러에 `MSG_CLEAR`를 전달해서 제거한다.
-1. `loadNextFrame`을 호출해 다음 프레임을 읽도록 한다. (성공하면 `onFrameReady`로 다시 돌아올 것시다.)
+1. `loadNextFrame`을 호출해 다음 프레임을 읽도록 한다. (성공하면 `onFrameReady`로 다시 돌아올 것이다.)
 
 ## 이미지 변경을 뷰에 전달하는 GifDrawable#onFrameReady
 
