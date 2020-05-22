@@ -122,7 +122,7 @@ private void startRunning() {
 
 단일 프레임 리소스일 경우 `Drawable#invalidateSelf`를 호출해서 다시 그린다.
 
-그렇지 않을 경우 (에니메이션) 실행 상태가 아닐 때 실행 상태로 바꾸고 `state.frameLoader.subscribe(this)`를 호출한 후 다시 그린다.
+에니메이션인 경우에는 실행 상태가 아닐 때 실행 상태로 바꾸고 `state.frameLoader.subscribe(this)`를 호출한 후 다시 그린다.
 
 ## Gif의 여러 프레임을 처리하는 GifFrameLoader
 
