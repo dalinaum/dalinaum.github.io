@@ -268,6 +268,8 @@ void onFrameReady(DelayTarget delayTarget) {
 
 실행 상태가 아닐 경우는 다음 프레임을 진행하면 안되니 `pendingTarget`에 올려두고 더 이상 진행하지 않는다. 다음에 `loadNextFrame`이 호출될 때 `pendingTarget`을 발견하고 다시 `onFrameReady`로 전달될 것이다.
 
+로딩된 프레임을 처리할 수 있다면 아래 로직이 수행된다.
+
 ```java
 @VisibleForTesting
 void onFrameReady(DelayTarget delayTarget) {
