@@ -78,13 +78,13 @@ private void maybeUpdateAnimatable(@Nullable Z resource) {
 
 [Animatable](https://developer.android.com/reference/android/graphics/drawable/Animatable)인 경우 `Animatable#start`를 호출한다. `Animatable`은 안드로이드 표준 객체인데 에니메이션을 정지하고 시작할 수 있는 기능을 제공하는 인터페이스다.
 
+## 에니메이션 시작 GifDrawable#start
+
 ```java
 public class GifDrawable extends Drawable
     implements GifFrameLoader.FrameCallback, Animatable, Animatable2Compat {
 }
 ```
-
-## 에니메이션 시작 GifDrawable#start
 
 [GifDrawable](https://github.com/bumptech/glide/blob/master/library/src/main/java/com/bumptech/glide/load/resource/gif/GifDrawable.java)이 `Animatable`이기 때문에 구현된 `start` 메서드가 호출된다.
 
