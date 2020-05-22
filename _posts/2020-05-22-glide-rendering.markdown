@@ -198,7 +198,7 @@ private void loadNextFrame() {
 1. `pendingTarget` (처리해야 하는 타겟)이 있다면 이를 `onFrameReady`메서드를 통해 처리한다.
 1. 이제 (다음 프레임) 로딩 중이다고 체크하고 디코드를 다음 프레임으로 진행시킨다. `requestBuilder.apply`를 통해 비동기로 로딩을 진행시키고 로딩의 상황을 `DelayTarget`이 수행하도록 구성한다.
 
-### 로딩된 다음 이미지를 다루는 타겟 `DelayTarget`
+### 다음 이미지 로딩을 다루는 타겟 DelayTarget
 
 아래는 `DelayTarget`의 일부이다.
 
