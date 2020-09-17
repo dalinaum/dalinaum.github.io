@@ -5,7 +5,7 @@ date:   2020-09-17 11:50:00 +0900
 categories: android
 ---
 
-![코틀린/자바를 한 눈에 안드로이드 앱 프로그래밍](/assets/android-book.gif)
+![코틀린/자바를 한 눈에 안드로이드 앱 프로그래밍](/assets/android-book.jpg)
 
 안드로이드 초급자 용 서적을 집필했습니다. 안드로이드 11에 맞추어 작성하였습니다.
 
