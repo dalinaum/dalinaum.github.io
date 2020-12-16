@@ -4,6 +4,10 @@ title: About
 permalink: /about/
 ---
 
+## Book
+
+* [코틀린/자바를 한 눈에 안드로이드 앱 프로그래밍](http://dalinaum.github.io/android/2020/09/17/android-book.html)
+
 ## Media
 
 * [자바 대안 코틀린을 대하는 우리의 자세](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20170614100135) - ZDNet Korea
