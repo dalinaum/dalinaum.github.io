@@ -37,7 +37,7 @@ ros install ailisp/prepl
 ros install ailisp/cl-lsp
 ```
 
-`ailisp/linedit` 설치에서 `gcc`를 찾으며 죽어버린다. vscode에 개발환경을 설치하기 위해 `gcc`를 설치하기 위해 MSYS2를 설치하는 것은 좀 오버같다. 게다가 C/C++ 환경을 설치한다 하여도 윈도 플랫폼에서 `ailisp/linedit`가 수정없이 빌드될지도 자신이 없다.
+`ailisp/linedit` 설치에서 `gcc`를 찾으며 죽어버린다. vscode에 개발환경을 설치하기 위해 `gcc`([MSYS2](https://www.msys2.org/))를 설치하는 것은 좀 오버같다. 그리고 MSYS2등을 설치한다 하여 `ailisp/linedit`가 수정없이 빌드될지도 자신이 없다.
 
 여기에서 시간을 낭비하고 싶지 않아 다른 에디터를 알아보려 한다.
 
