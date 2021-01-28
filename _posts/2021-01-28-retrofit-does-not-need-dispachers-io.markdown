@@ -33,7 +33,7 @@ val user: LiveData<String> = liveData(Dispatchers.IO) {
 
 사실은 `Dispatchers.IO`는 의미가 없습니다. Retrofit의 구현을 살펴봅시다.
 
-인터페이스의 메서드는 `HttpServiceMethod` 메서드에서 해당 메서드를 어떻게 처리할지 결정합니다.
+인터페이스의 메서드는 `HttpServiceMethod`의 `parseAnnotations`에서 어떻게 처리할지 결정합니다.
 
 ```java
 abstract class HttpServiceMethod<ResponseT, ReturnT> extends ServiceMethod<ReturnT> {
