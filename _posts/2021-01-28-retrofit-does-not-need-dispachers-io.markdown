@@ -25,7 +25,7 @@ interface Service {
 아래와 같이 호출하는 경우가 많을 것입니다.
 
 ```kotlin
-val user: LiveData<User> = liveData(Dispatchers.IO) {
+val user: LiveData<String> = liveData(Dispatchers.IO) {
     val data = service.body()
     emit(data)
 }
@@ -205,7 +205,7 @@ suspend fun <T> Call<T>.awaitResponse(): Response<T> {
 결론적으로 말해 레트로핏을 쓸 때 별도의 디스패처를 쓸 필요가 없습니다.
 
 ```kotlin
-val user: LiveData<User> = liveData {
+val user: LiveData<String> = liveData {
     val data = service.body()
     emit(data)
 }
