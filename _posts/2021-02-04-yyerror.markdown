@@ -5,8 +5,7 @@ date:   2021-02-04 02:30:00 +0900
 categories: compiler
 ---
 
-Go 언어 개발자 [러스 콕스](https://swtch.com/~rsc/)의 [Generating Good Syntax Errors](https://research.swtch.com/yyerror)의 번역입니다. 해당 글은 [Creative Commons Attribution License](https://research.swtch.com/yyerror) 라이선스를 따르며 번역본도 역시 동일합니다.
----
+> Go 언어 개발자 [러스 콕스](https://swtch.com/~rsc/)의 [Generating Good Syntax Errors](https://research.swtch.com/yyerror)의 번역입니다. 해당 글은 [Creative Commons Attribution License](https://research.swtch.com/yyerror) 라이선스를 따르며 번역본도 역시 동일합니다.
 
 yacc류와 같은 파서 생성기(parser generator, 구문 분석기 생성기)를 써야할지 (일반적으로는 재귀 하강(recursive descent)을 이용해) 손으로 파서를 작성할지 여부는 컴파일러를 작성할 때 큰 논쟁거리입니다. 파서 생성기를 이용하면 파서 개발자는 파싱할 언어를 정확하게 정의하고 대부분의 지저분한 작업은 프로그램이 합니다. 반면 손으로 재귀 하강 파서를 만드는 것을 지지하는 사람들은 파서 생성기는 과도하고, 파서는 손으로 작성하기 충분히 쉬우며, 그 결과는 이해하기 쉽고, 더 효과적이며, 구문 상 유효하지 않는 프로그램에 대해 더 나은 오류 메시지를 줄 수 있다고 주장합니다.
 
