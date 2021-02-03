@@ -1,0 +1,102 @@
+---
+layout: post
+title:  "좋은 구문 오류 생성하기"
+date:   2021-02-04 02:30:00 +0900
+categories: compiler
+---
+
+Go 언어 개발자 [러스 콕스](https://swtch.com/~rsc/)의 [Generating Good Syntax Errors](https://research.swtch.com/yyerror)의 번역입니다. 해당 글은 [Creative Commons Attribution License](https://research.swtch.com/yyerror) 라이선스를 따르며 번역본도 역시 동일합니다.
+---
+
+yacc류와 같은 파서 생성기(parser generator, 구문 분석기 생성기)를 써야할지 (일반적으로는 재귀 하강(recursive descent)을 이용해) 손으로 파서를 작성할지 여부는 컴파일러를 작성할 때 큰 논쟁거리입니다. 파서 생성기를 이용하면 파서 개발자는 파싱할 언어를 정확하게 정의하고 대부분의 지저분한 작업은 프로그램이 합니다. 반면 손으로 재귀 하강 파서를 만드는 것을 지지하는 사람들은 파서 생성기는 과도하고, 파서는 손으로 작성하기 충분히 쉬우며, 그 결과는 이해하기 쉽고, 더 효과적이며, 구문 상 유효하지 않는 프로그램에 대해 더 나은 오류 메시지를 줄 수 있다고 주장합니다.
+
+대부분의 종교 논쟁에서와 마찬가지로 어느 쪽을 선택할지는 무엇보다 친숙함에 의해 결정되는 것으로 보입니다. 나는 yacc를 사용하는 법을 손으로 파서를 작성하는 것보다 먼저 알았기에 파서 생성기 편에 강하게 서게 되었습니다. 지금은 두 기술을 어떻게 적용하는지 알지만, 여전히 파서 생성기를 사용하곤 합니다. 사실, 손으로 파서를 작성하기 보다는 파서 생성기로 여러 프로젝트를 작성했습니다. 앞으로 보게 될 좋은 표기법은 많은 것을 의미할 것입니다.
+
+[Coder At Work](http://books.google.com/books?id=nneBa6-mWfgC&printsec=frontcover&dq=coders+at+work&ei=RNRfS5fzMIO-zATqi-WlBw&cd=1#v=onepage&q=yacc&f=false)에서 켄 톰슨 (Ken Thompson) (주: 유닉스, Plan 9, Go의 창시자)은 피터 세이벨 (Peter Seibel)에게 yacc와 lex에 대해 이야기합니다.
+
+> 세이벨: 프로그래밍을 하는 것을 즐겁게 만드는 개발 도구가 있나요?
+> 톰슨: yacc를 사랑합니다. 그냥 yacc를 사랑해요. 원하는 일을 정확히 수행합니다. 보완물인 lex는 끔찍합니다. 원하는 대로 작동하지 않아요.
+> 세이벨: 어쨌든 그걸 사용하나요? 아니면 손으로 렉서(lexer, 어휘 분석기)를 만드나요?
+> 톰슨: 나는 손으로 렉서를 작성합니다. 그게 훨씬 더 쉬워요.
+
+손으로 파서를 만드는 이들의 반대들은 lex에 대해 톰슨이 한 것과 비슷합니다. 도구가 원하는대로 수행하지 않는다는 거죠. 하지만 도구가 할수 없는 근본적인 이유는 없습니다. 예를 들어 LALR(1) 알고리즘이 생성하는 가짜 충돌은 확실히 이해하기 어렵습니다. 하지만 이걸 LR(1)이나 GLR(1)로 바꾼다면 더 유용한 도구를 얻습니다. 그리고 LALR(1) 알고리즘 내에서 작업하는 법을 배운다면 심지어 yacc 조차 매우 강력합니다.
+
+가장 큰 방향을 불러일으키는 파서 생성에 대한 반대는 yacc 같은 생성기가 "구문 오류"에 불과한 부적절한 오류 메시지를 생성한다는 것 같습니다. [g++이 yacc 기반 C++파서에서 손으로 작성한 파서로 바꿀 때](https://gcc.gnu.org/legacy-ml/gcc/2000-10/msg00573.html) 기대했던 주 이점은 더 나은 오류 메시지였습니다. (공평하게 말하자면 C++ 구문은 어떤 도구로도 파싱하는 것이 거의 불가능합니다. 많은 특수한 경우들이 손으로 쓴 코드의 요구합니다.) 이런 반대를 해결하기는 더 어려워 보입니다. 파서는 입력토큰을 처리할 때에 내부적으로 상태 간 이동하는 오토마타(일반적으로는 큰 숫자 테이블)로 컴파일 합니다. 이동할 다음 상태를 찾을 수 없을 때 오류를 보고하고요. 이걸 어떻게 좋은 메시지로 바꿀 수 있겠습니까?
+
+클린턴 제퍼리(Clinton Jeffery)는 2003년 ACM TOPLAS에 발표한 “[(예제로 부터 LR 구문 오류 메시지를 생성하기. (Generating LR Syntax Error Messages from Examples)](http://people.cs.vt.edu/~haebang//coursework/PL/summary.pdf)”(주: 링크는 깨졌고 ACM의 계정이 있어야 논문을 읽을 수 있습니다.)에서 방법을 보여주었습니다. 제목에서 짐작할 수 있듯 파서가 생성된 후 실제로 사용되기 전에 학습 단계를 도입하는 아이디어입니다. 이 단계에서 구문 오류의 예를 파서에게 제공하고 오류를 감지했을 때 어떤 상태가 되는지 다음 토큰이 무엇이 되는지 살핍니다. 실 사용중에 오토마타가 그 상태(와 입력 토큰)로 에러를 만나면 예의 적합한 메시지를 보여줄 수 있습니다. 파서의 상태는 기본적으로 주변 상황의 추상적인 요약이기에 특정 상태의 에러들을 하나의 메시지로 처리하는 것 합리적이란게 중점입니다.
+
+```go
+package main
+
+import (
+ "fmt",
+ "math"
+)
+```
+
+예를 들어 이 Go 프로그램이 상태 콤마에서 상태 76으로 구문 오류를 일으킨다고 가정합시다. 파서에서 이 상태는 import 블록의 가운데고 스트링 상수가 나오길 기대합니다. 상태는 문맥을 추상화하고 아래의 잘못된 프로그램을 파싱할 때 같은 상태가 됩니다.
+
+```go
+package fmt
+
+import ( "strings"; "testing", "xgb" )
+```
+
+파서에게 첫 번째 프로그램에 대한 적절한 에러 메시지가 "unexpected, during import block"(import 블록 중에 기대되지 않음)이라 알려주면 파서는 같은 메시지를 두번째 프로그램에도 사용합니다.
+
+이것은 우아한 생각이며 어떤 복잡성을 문법 자체에 더하지 않고 구현을 유지할 수 있습니다. 이런 생각을 수년 전(내 생각엔 2000년 쯤)에 흘러 들었지만 이번 주까지 사용할 기회가 없었습니다.
+
+Go 파서는 세 종류가 있습니다. 이언 랜스 테일러(Ian Lance Taylor)가 gccgo를 위해 C++로 손으로 작성한 재귀 하강 파서, 로버트 그리즈머(Robert Griesemer)가 [godoc](http://golang.org/cmd/godoc/)과 [gofmt](http://golang.org/cmd/gofmt/)를 위해 Go로 손으로 작성한 재귀 하강 파서 (import "[go/parser](http://golang.org/pkg/go/parser)"), 켄 톰슨이 gc 컴파일러 스위트를 위해 C로 작성한 yacc 기반의 파서입니다.
+
+월요일 밤에 나는 제퍼리의 생각을 gc 컴파일러 스위트에 구현했습니다. gc 컴파일러는 yacc의 GNU 구현인 bison을 씁니다. bison은 이런 에러 관리를 기본적으로 제공하지 않지만 도입하는 것은 어렵지 않습니다. bison을 바꾸려면 새 버전의 bison 배포가 필요하지만, 내 구현은 대신 bison의 출력을 후처리합니다.
+
+예는 새로운 파일 [go.errors](http://code.google.com/p/go/source/browse/src/cmd/gc/go.errors?spec=svn7427b07b504271532d96c630d3dc37aef4d06c7d&r=7427b07b504271532d96c630d3dc37aef4d06c7d)에 있습니다. 렉서를 손으로 만들었기 때문에 이 시물레이션에는 사용할 수 없어서, 예제는 실제 프로그램 부분 대신 토큰 네임의 시퀀스입니다. 토큰 목록에서 위의 프로그램과 거기에 연관된 오류 메시지는 다음과 같습니다.
+
+```
+% loadsys package LIMPORT '(' LLITERAL import_package import_there ','
+"unexpected , during import block",
+```
+
+첫 번째 줄의 토큰을 이해하려면 다양한 문법 토큰 이름의 의의를 알아야 하지만 이건 기본적으로 구문을 모방합니다. 그리고 이 도구는 어쨌든 문법 작업을 하는 사람을 대상으로 합니다. [awk 프로그램](http://code.google.com/p/go/source/browse/src/cmd/gc/bisonerrors?spec=svn7427b07b504271532d96c630d3dc37aef4d06c7d&r=7427b07b504271532d96c630d3dc37aef4d06c7d)이 디버깅 덤프 y.output으로 부터 bison 테이블을 읽고 go.errors 파일을 처리하고 위와 같은 각 줄을 문제가 되는 상태와 입력 토큰으로 교체합니다. 이 작업이 컴파일러에 연결가능하고 구문 오류가 발생할 때 참조할 수 있는 테이블을 생성합니다. 상태와 입력 토큰과 일치하는 내용을 테이블에서 찾으면 단순한 구문 오류 보다 나은 오류를 사용할 수 있다.
+
+[하나의 버그](https://github.com/golang/go/issues/522)를 닫는 것도 큰일이었는데, 이제는 다른 일반적인 경우에 더 나은 메시지를 쉽게 추가할 수 있습니다. 예를 들어 for 초기화에 짧은 := 선언만 허용되는게 가끔은 새로운 Go 프로그래머를 방해합니다.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+ fmt.Printf("hello, world\n")
+ for var i = 0; i < 10; i++ {
+  fmt.Println(i)
+ }
+}
+```
+
+이 프로그램이 주어지면 컴파일러는 단지 7번째 줄에 구문 오류가 있다고 말했지만, 이제는 이렇게 설명합니다.
+
+```sh
+$ 6g x.go
+x.go:7: syntax error: var declaration not allowed in for initializer
+```
+
+왜냐하면 go.errors에 아래의 시구(stanza)가 있기 때문입니다.
+
+```
+% loadsys package imports LFUNC LNAME '(' ')' '{' LFOR LVAR LNAME '=' LNAME
+"var declaration not allowed in for initializer",
+```
+
+Gccgo와 gofmt는 보다 전형적인 토큰 기반의 오류를 줍니다.
+
+```sh
+$ gccgo x.go
+x.go:7:6: error: expected operand
+...
+
+$ gofmt x.go
+x.go:7:6: expected operand, found 'var'
+```
+
+둘 다 특별한 처리를 하지 않는 것이 흥미롭고, 이렇게 하기 위해 필요한 작업을 고려하는 것도 흥미롭습니다. 둘을 바꾸려면 특별한 사례를 넣을 올바른 위치를 찾기 위해 해당 파서를 잘 이해해야 합니다. 예제 기반의 접근은 예제를 작성하기만 하면 도구에서 파서내에서 어디로 가야할 곳을 알려줍니다.
