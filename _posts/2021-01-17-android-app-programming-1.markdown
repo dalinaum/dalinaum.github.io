@@ -6,7 +6,7 @@ categories: android
 ---
 
 * [안드로이드 앱 프로그래밍 #1](http://dalinaum.github.io/android/2021/01/17/android-app-programming-1.html)
-* [안드로이드 앱 프로그래밍 #1](http://dalinaum.github.io/android/2021/01/25/android-app-programming-2.html)
+* [안드로이드 앱 프로그래밍 #2](http://dalinaum.github.io/android/2021/01/25/android-app-programming-2.html)
 * [안드로이드 앱 프로그래밍 #3](http://dalinaum.github.io/android/2021/02/10/android-app-programming-3.html)
 
 안드로이드 앱 개발을 처음부터 영상으로 다루어 보려 합니다. 첫 영상은 안드로이드 스튜디오 설치, 에뮬레이터, 단말 설정을 다룹니다.
