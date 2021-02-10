@@ -65,7 +65,7 @@ plt.show()
 
 0번부터 300번을 진행하며 그 시점의 스코어를 `train_score`와 `test_score`에 저장. 
 
-![에포크 반복횟수와 점수]({{ "/assets/5-graph.jpg" | absolute_url }})
+![에포크 반복횟수와 점수]({{ "/assets/5-graph.png" | absolute_url }})
 에포크 반복횟수와 점수
 
 100번 정도가 정확도도 향상되었고 이후에는 훈련 세트와 테스트 세트가 점수가 벌어지고 있음. 100번이 적합.
