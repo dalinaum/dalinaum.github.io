@@ -14,4 +14,4 @@ markdown: kramdown
 highlighter: rouge
 
 paginate: 7
-paginate_path: "/blog/page/:num/"
+paginate_path: "/page/:num/"
