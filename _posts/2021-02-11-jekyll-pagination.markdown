@@ -98,4 +98,4 @@ layout: default
 
 깃헙에 배포하니 제대로 나온다. 간단하네.
 
-![페이지네이션 적용된 블로그]({{ "/assets/4-pagination.png" | absolute_url }}) 페이지 네이션 적용된 블로그
+![페이지네이션 적용된 블로그]({{ "/assets/4-pagination.png" | absolute_url }}) 페이지네이션이 적용된 블로그
