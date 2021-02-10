@@ -13,4 +13,5 @@ timezone: Asia/Seoul
 markdown: kramdown
 highlighter: rouge
 
-theme: jekyll-theme-cayman
+paginate: 7
+paginate_path: "/blog/page/:num/"
