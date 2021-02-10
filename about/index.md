@@ -13,6 +13,7 @@ permalink: /about/
 * [ZIP: Data Compressions (20분만에 배우는 압축 알고리즘)](https://www.youtube.com/watch?v=Yc_orrKXn1I)
 * [SW 중심사회 SW기업 카카오뱅크 김용욱](https://www.youtube.com/watch?v=Ej56lolvfhE) - SW 중심사회
 * [안드로이드 빌드: 설탕 없는 세계](https://if.kakao.com/2019/program) - if(Kakao) 2019
+* [Obfuscation 101: 난독화, 프로가드, R8, 트랜스포머 API](https://tv.naver.com/v/4655623/list/272653) - NAVER Tech Concert: Android 2018
 * [Realm은 어떻게 효율적인 데이터베이스를 만들었나?](https://deview.kr/2017/schedule/206) - Deview 2017
 * [React Everywhere](https://deview.kr/2015/schedule#session/88) - Deview 2015
 * [RxAndroid](https://www.youtube.com/watch?v=FpIqbVTnB30) - GDG Android
