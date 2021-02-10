@@ -30,66 +30,70 @@ layout: default
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    [% for post in site.posts %]
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">[[ post.date | date: "%b %-d, %Y" ]]</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="[[ post.url | prepend: site.baseurl ]]">[[ post.title ]]</a>
         </h2>
       </li>
-    {% endfor %}
+    [% endfor %]
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="[[ "/feed.xml" | prepend: site.baseurl ]]">via RSS</a></p>
 
 </div>
 ```
+
+중괄호 `{}` 대신 대괄호 `[]`로 적었는데 소스코드에 적은 것도 Jekyll이 처리해서 적어두었다. 실제로 설정할 때는 중괄호로 적어야 한다.
 
 여기에 `site.posts`를 쓰는 코드를 `paginator.posts` 기반으로 변경했다.
 
 ```html
 <ul class="post-list">
-{% for post in paginator.posts %}
+[% for post in paginator.posts %]
     <li>
-    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <span class="post-meta">[[ post.date | date: "%b %-d, %Y" ]]</span>
 
     <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a class="post-link" href="[[ post.url | prepend: site.baseurl ]]">[[ post.title ]]</a>
     </h2>
     </li>
-{% endfor %}
+[% endfor %]
 </ul>
 ```
+
+역시 중괄호 대신 대괄호로 적었다. 실제로는 다 중괄호로 바꾸자.
 
 그 아래에 다음 블록을 추가하였다.
 
 ```html
-{% if paginator.total_pages > 1 %}
+[% if paginator.total_pages > 1 %]
 <div class="pagination">
-{% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
-{% else %}
+[% if paginator.previous_page %]
+    <a href="[[ paginator.previous_page_path | relative_url ]]">&laquo; Prev</a>
+[% else %]
     <span>&laquo; Prev</span>
-{% endif %}
+[% endif %]
 
-{% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-    <em>{{ page }}</em>
-    {% elsif page == 1 %}
-    <a href="{{ '/' | relative_url }}">{{ page }}</a>
-    {% else %}
-    <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-{% endfor %}
+[% for page in (1..paginator.total_pages) %]
+    [% if page == paginator.page %]
+    <em>[[ page ]]</em>
+    [% elsif page == 1 %]
+    <a href="[[ '/' | relative_url ]]">[[ page ]]</a>
+    [% else %]
+    <a href="[[ site.paginate_path | relative_url | replace: ':num', page ]]">[[ page ]]</a>
+    [% endif %]
+[% endfor %]
 
-{% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
-{% else %}
+[% if paginator.next_page %]
+    <a href="[[ paginator.next_page_path | relative_url ]]">Next &raquo;</a>
+[% else %]
     <span>Next &raquo;</span>
-{% endif %}
+[% endif %]
 </div>
-{% endif %}
+[% endif %]
 ```
 
 깃헙에 배포하니 제대로 나온다. 간단하네.
