@@ -1,0 +1,74 @@
+---
+layout: post
+title:  "혼자 공부하는 머신러닝 + 딥러닝 3주차"
+date:   2021-02-11 04:35:00 +0900
+categories: book
+---
+
+* [혼자 공부하는 머신러닝 + 딥러닝 1주차](http://dalinaum.github.io/book/2021/01/28/hongong-ml-1.html)
+* [혼자 공부하는 머신러닝 + 딥러닝 2주차](http://dalinaum.github.io/book/2021/02/10/hongong-ml-2.html)
+* [혼자 공부하는 머신러닝 + 딥러닝 3주차](http://dalinaum.github.io/book/2021/02/11/hongong-ml-3.html)
+
+머신러닝을 정리할 겸 한빛미디어가 진행하는 혼공 학습단 5기에 참여했다. 4장에 대해 학습을 진행했다.
+
+## 기본 미션
+
+확인문제
+
+1. 2개보다 많은 클래스가 있는 분류 문제를 무엇이라 부르나요?
+
+(2) 다중 분류
+
+2. 로지스틱 회귀가 이진 분류에서 확률을 출력하기 위해 사용하는 함수는 무엇인가요?
+
+(1) 시그모이드 함수
+
+3. decisin_function()에서 메서드의 출력이 0일때 시그모이드 함수의 값은 얼마인가요?
+
+(3) 0.5
+
+## 선택 미션
+
+```py
+from sklearn.linear_model import SGDClassifier
+
+sc = SGDClassifier(loss='log', max_iter=10, random_state=42)
+sc.fit(train_scaled, train_target)
+print(sc.score(train_scaled, train_target))
+print(sc.score(test_scaled, test_target))
+```
+
+`SGDClassifer`에 `loss='log'`를 선택해서 로지스틱 손실 함수로 지정. 랜덤하게 하나를 선택해서 진행하는 확률적 경사 하강법을 진행. `fit` 메서드가 호출되어도 하나만 학습.
+
+```py
+sc.partial_fit(train_scaled, train_target)
+print(sc.score(train_scaled, train_target))
+print(sc.score(test_scaled, test_target))
+```
+
+`partial_fit`으로 1 에포크씩 이어 진행할 수 있음.
+
+```py
+import numpy as np
+sc = SGDClassifier(loss='log', random_state=42)
+train_score = []
+test_score = []
+classes = np.unique(train_target)
+
+for _ in range(0, 300):
+  sc.partial_fit(train_scaled, train_target, classes=classes)
+  train_score.append(sc.score(train_scaled, train_target))
+  test_score.append(sc.score(test_scaled, test_target))
+
+import matplotlib.pyplot as plt
+plt.plot(train_score)
+plt.plot(test_score)
+plt.show()
+```
+
+0번부터 300번을 진행하며 그 시점의 스코어를 `train_score`와 `test_score`에 저장. 
+
+![에포크 반복횟수와 점수]({{ "/assets/5-graph.jpg" | absolute_url }})
+에포크 반복횟수와 점수
+
+100번 정도가 정확도도 향상되었고 이후에는 훈련 세트와 테스트 세트가 점수가 벌어지고 있음. 100번이 적합.
