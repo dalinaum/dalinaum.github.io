@@ -10,6 +10,7 @@ permalink: /about/
 
 ## Media
 
+* [SW중심사회 - SW기압 카카오뱅크 김용욱](https://www.youtube.com/watch?v=Ej56lolvfhE)
 * [자바 대안 코틀린을 대하는 우리의 자세](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20170614100135) - ZDNet Korea
 * [코틀린, 안드로이드 생태계 사로잡나](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20170614095146) - ZDNet Korea
 * [안드로이드 개발자, 왜 구글 파이어베이스에 놀라는가?](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20160526171640) - ZDNet Korea
