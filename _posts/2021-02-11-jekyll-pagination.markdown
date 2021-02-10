@@ -11,7 +11,7 @@ categories: tool
 
 ```yml
 paginate: 7
-paginate_path: "/blog/page/:num/"
+paginate_path: "/page/:num/"
 ```
 
 하단에 보일 글을 7개로 설정했다. 10개는 너무 많고 5개는 너무 적은 것 같았다.
