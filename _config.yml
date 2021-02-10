@@ -12,3 +12,5 @@ timezone: Asia/Seoul
 # Build settings
 markdown: kramdown
 highlighter: rouge
+
+theme: jekyll-theme-cayman
