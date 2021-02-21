@@ -34,7 +34,9 @@ layout: default
     {% for post in site.posts %}
 {% endraw %}
       <li>
-        <span class="post-meta">[[ post.date | date: "%b %-d, %Y" ]]</span>
+{% raw %}
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+{% endraw %}
 
         <h2>
           <a class="post-link" href="[[ post.url | prepend: site.baseurl ]]">[[ post.title ]]</a>
