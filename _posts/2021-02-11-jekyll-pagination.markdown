@@ -30,7 +30,9 @@ layout: default
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
-    [% for post in site.posts %]
+{% raw %}
+    {% for post in site.posts %}
+{% endraw %}
       <li>
         <span class="post-meta">[[ post.date | date: "%b %-d, %Y" ]]</span>
 
