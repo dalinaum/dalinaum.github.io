@@ -55,16 +55,18 @@ layout: default
 여기에 `site.posts`를 쓰는 코드를 `paginator.posts` 기반으로 변경했다.
 
 ```html
+{% raw %}
 <ul class="post-list">
-[% for post in paginator.posts %]
+{% for post in paginator.posts %}
     <li>
-    <span class="post-meta">[[ post.date | date: "%b %-d, %Y" ]]</span>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
     <h2>
-        <a class="post-link" href="[[ post.url | prepend: site.baseurl ]]">[[ post.title ]]</a>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2>
     </li>
-[% endfor %]
+{% endfor %}
+{% endraw %}
 </ul>
 ```
 
