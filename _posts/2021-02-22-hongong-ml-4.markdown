@@ -9,6 +9,7 @@ categories: book
 * [혼자 공부하는 머신러닝 + 딥러닝 2주차](http://dalinaum.github.io/book/2021/02/10/hongong-ml-2.html)
 * [혼자 공부하는 머신러닝 + 딥러닝 3주차](http://dalinaum.github.io/book/2021/02/11/hongong-ml-3.html)
 * [혼자 공부하는 머신러닝 + 딥러닝 4주차](http://dalinaum.github.io/book/2021/02/22/hongong-ml-4.html)
+* [혼자 공부하는 머신러닝 + 딥러닝 5주차](http://dalinaum.github.io/book/2021/03/02/hongong-ml-5.html)
 
 
 ## 기본 미션
