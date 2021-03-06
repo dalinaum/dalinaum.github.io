@@ -25,9 +25,9 @@ extends Panel
 In prior releases, APIs were deprecated but virtually never removed. Starting with JDK 9, APIs may be marked as deprecated for removal. This indicates that the API is eligible to be removed in the next release of the JDK platform. If your application or library consumes any of these APIs, then you should make a plan to migrate from them soon.
 ```
 
-이전 릴리즈까지는 API가 `deprecated` 되었다는 표기만 했을 뿐 실제로 제거하지 않았지만 JDK9부터는 `deprecated for removal`라고 표시를 하고 JDK 플랫폼의 다음 릴리즈 때 제거할 수 있다. 이렇게 표기된 API를 쓴다면 가능한 빨리 다른 API로 변경할 준비를 해야한다.
+이전 릴리즈까지는 API가 `deprecated` 되었다는 표기만 했을 뿐 실제로 제거하지 않았지만 JDK9부터는 `deprecated, for removal`라고 표시를 하고 JDK 플랫폼의 다음 릴리즈 때 제거할 수 있다. 이렇게 표기된 API를 쓴다면 가능한 빨리 다른 API로 변경할 준비를 해야한다.
 
-사람들이 `deprecated`되었다고 붙여도 그걸 사용하고 그러니 이제 진짜 지원 중단된다 삭제되니깐 그만 쓰라는 경고를 하나 추가하고 진짜로 삭제하기 시작한 것이다.
+사람들이 `deprecated`되었다고 붙여도 그걸 사용하고 그러니 이제 곧 삭제가 되는 deprecated라고 (`deprecated, for removal`) 엄포를 하고 진짜 삭제하기 시작한 것이다.
 
 어노테이션은 다음과 같은 형태로 개선(?)되었다.
 
@@ -37,6 +37,6 @@ In prior releases, APIs were deprecated but virtually never removed. Starting wi
 
 `forRemoval`의 기본값은 `false`이고 이것이 `true`이면 이 API로 부터는 가능한 빨리 벗어나야겠다.
 
-아마 `Applet` 관련 객체들은 자바 9부터 15까지 `deprecated` 상태였지만 아마 다음 버전의 자바에서는 진짜로 다시 볼 수 없을지도 모르겠다.
+아마 `Applet` 관련 객체들은 자바 9부터 15까지 `deprecated` 상태였지만 아마 다음 버전(16?)의 자바에서는 `deprecated, for removal`로 격상되고 다다음 버전(17?)에서는 진짜로 다시 볼 수 없을지도 모른다.
 
 덧붙임: `deprecated`에 대한 적절한 번역어가 무엇인지 알기 어려워 일단 `deprecated`라고 적어두었다. 최소한 음차라도 해야할텐데 뭐가 좋은 번역일지 모르겠네.
