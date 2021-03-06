@@ -10,6 +10,7 @@ categories: book
 * [혼자 공부하는 머신러닝 + 딥러닝 3주차](http://dalinaum.github.io/book/2021/02/11/hongong-ml-3.html)
 * [혼자 공부하는 머신러닝 + 딥러닝 4주차](http://dalinaum.github.io/book/2021/02/22/hongong-ml-4.html)
 * [혼자 공부하는 머신러닝 + 딥러닝 5주차](http://dalinaum.github.io/book/2021/03/02/hongong-ml-5.html)
+* [혼자 공부하는 머신러닝 + 딥러닝 6주차 (완)](http://dalinaum.github.io/book/2021/03/07/hongong-ml-6.html)
 
 머신러닝을 정리할 겸 한빛미디어가 진행하는 혼공 학습단 5기에 참여했다. 4장에 대해 학습을 진행했다.
 

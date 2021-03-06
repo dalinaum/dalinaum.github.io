@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "혼자 공부하는 머신러닝 + 딥러닝 6주차 (완)"
+date:   2021-03-07 02:10:00 +0900
+categories: book
+---
+
+* [혼자 공부하는 머신러닝 + 딥러닝 1주차](http://dalinaum.github.io/book/2021/01/28/hongong-ml-1.html)
+* [혼자 공부하는 머신러닝 + 딥러닝 2주차](http://dalinaum.github.io/book/2021/02/10/hongong-ml-2.html)
+* [혼자 공부하는 머신러닝 + 딥러닝 3주차](http://dalinaum.github.io/book/2021/02/11/hongong-ml-3.html)
+* [혼자 공부하는 머신러닝 + 딥러닝 4주차](http://dalinaum.github.io/book/2021/02/22/hongong-ml-4.html)
+* [혼자 공부하는 머신러닝 + 딥러닝 5주차](http://dalinaum.github.io/book/2021/03/02/hongong-ml-5.html)
+* [혼자 공부하는 머신러닝 + 딥러닝 6주차 (완)](http://dalinaum.github.io/book/2021/03/07/hongong-ml-6.html)
+
+머신러닝을 정리할 겸 한빛미디어가 진행하는 혼공 학습단 5기에 참여했다. 1, 2장에 대해 학습을 진행했다.
+
+## 기본 미션: 7-1장 문제 풀이
+
+1. 어떤 인공 신경망의 입력 특성이 100개이고 밀집층에 있는 뉴런 개수가 10개일 때 필요한 모델 파라미터의 개수는 몇 개인가요? (3) 1,010개 (100 * 10 + 10)
+
+2. 케라스의 Desnse 클래스를 사용해 신경망의 출력층을 만들려고 합니다. 이 신경망이 이진 분류 모델이라면 activation 매개변수에 어떤 활성화 함수를 지정해야 하나요? (2) 'sigmoid'
+
+3. 케라스 모델에서 손실 함수와 측정 지표 등을 지정하는 메서드는 무엇인가요? (4) compile
+
+4. 정수 레이블을 타깃으로 가지는 다중 분류 문제일 때 케라스 모델의 compile() 메서드에 지정할 손실 함수로 적절한 것은 무엇인가요? (1) `sparse_categorical_crossentropy`
+
+## 선택 미션: 7-2장 문제 풀이
+
+1. 다음 중 모델의 add() 메서드 사용법이 올바른 것은 어떤 것인가요? (2) `model.add(keras.layers.Dense(10, activation='relu'))`
+
+2. 크기가 300 x 300인 입력을 케라스 층으로 펼치려고 합니다. 다음 중 어떤 층을 사용해야 하나요? (2) Flatten
+
+3. 다음 중에서 이미지 분류를 위한 심층 신경망에 널리 사용되는 케라스의 활성화 함수는 무엇인가요? (3) relu
+
+4. 다음 중 적응적 학습률을 사용하지 않는 옵티마이저는 무엇인가요? (1) SGD
