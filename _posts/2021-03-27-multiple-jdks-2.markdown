@@ -111,7 +111,7 @@ sdk install java 8.0.282-open
 sdk install java 11.0.10-open
 ```
 
-`/c/Users/<USER_NAME>/.sdkman/`에 설치된다.
+`c:\Users\<USER_NAME>\.sdkman/`에 설치된다.
 
 `<USER_NAME>`이 `User`라면 다음과 같은 경로에 설치된다.
 
@@ -136,7 +136,9 @@ OpenJDK 버전과 Oracle 버전이 있다. OpenJDK버전은 아래 링크에서 
  * `c:\opt\jdk7`
  * `c:\opt\jdk9`
 
- 내 아이디는 `User`이기 때문에 아래와 같은 것이고 실제 사용에서는 `User`를 다른 경로로 바꾸어야 한다.
+아무 디렉토리에 설치해도 상관없지만 `opt` 디렉토리 아래 설치했다. `opt`가 이런 용도로 유닉스에서 사용하는 디렉토리인데 그냥 Windows에서도 사용하고 있다.
+
+내 아이디는 `User`이기 때문에 아래와 같은 것이고 실제 사용에서는 `User`를 다른 경로로 바꾸어야 한다.
 
 ```sh
 JDK_16="c:\Users/User\.sdkman\candidates\java\6.0.119-zulu"
@@ -149,7 +151,7 @@ JAVA_HOME은 11버전이나 8버전을 상황에 따라 설정한다.
 
 ```sh
 JAVA_HOME="c:\Users\User\.sdkman\candidates\java\11.0.10-open"
-JAVA_HOME="c:\Users/User\.sdkman\candidates\java\8.0.282-open"
+JAVA_HOME="c:\Users\User\.sdkman\candidates\java\8.0.282-open"
 ```
 
 `시스템 속성` > `환경 변수`에서 `사용자 변수`에 항목들을 설정하자. 찾기 어려우면 Windows 10 하단의 검색창에서 `시스템 환경 변수 편집`을 입력하고 시작하자.
