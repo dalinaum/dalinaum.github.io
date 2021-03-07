@@ -7,7 +7,7 @@ categories: java
 
 [맥에 여러 자바 버전을 설치](http://dalinaum.github.io/mac/java/2020/05/20/multiple-jdks.html)했었는데 이제 윈도우즈에서도 여러 자바 버전을 사용할 필요가 생겼다. (이게 다 [코틀린 빌드](https://github.com/JetBrains/kotlin) 때문이다.)
 
-[sdkman](https://sdkman.io/)을 이용해 필요한 자바 버전을 윈도우에 설치하려 한다. sdkman은 유닉스와 맥에서도 잘 돌기 때문에 유닉스와 맥에서도 유사할 것이다. `sdkman`이 `bash`와 `zip`을 요구하기 때문에 Git bash 터미널를 열었다. 아마도 Github Desktop 설치 중에 설치가 된 것 같은데 직접 설치해도 동일할 것이다.
+[sdkman](https://sdkman.io/)을 이용해 필요한 자바 버전을 윈도우에 설치하려 한다. sdkman은 유닉스와 맥에서도 잘 돌기 때문에 유닉스와 맥에서도 유사할 것이다. `sdkman`이 `bash`와 `zip`을 요구하기 때문에 [Git Bash](https://git-scm.com/downloads) 터미널를 열었다. 아마도 [Github Desktop](https://desktop.github.com/) 설치 중에 설치가 된 것 같은데 직접 설치해도 동일할 것이다.
 
 이제 `bash` 의존성은 해결했으니 `zip` 의존성을 해결하자. zip을 수동으로 설치하고 싶지 않기 때문에 윈도용 패키지 관리자 [Scoop](https://scoop.sh/)을 이용하기로 한다.
 
@@ -24,13 +24,13 @@ iwr -useb get.scoop.sh | iex
 scoop install zip
 ```
 
-그리고 Git bash에 접속해 sdkman을 설치한다. 파워 셀이 아니라는 것을 유의하자.
+그리고 Git Bash에 접속해 sdkman을 설치한다. 파워 셀이 아니라는 것을 유의하자.
 
 ```sh
 curl -s "https://get.sdkman.io" | bash
 ```
 
-git bash를 다시 열거나 터미널에 아래의 내용을 입력하면 sdkman을 사용할 수 있다.
+Git Bash를 다시 열거나 터미널에 아래의 내용을 입력하면 sdkman을 사용할 수 있다.
 
 ```sh
 source "/c/Users/User/.sdkman/bin/sdkman-init.sh"
