@@ -58,6 +58,7 @@ export JDK_9="/Library/Java/JavaVirtualMachines/adoptopenjdk-9.jdk/Contents/Home
 
 ## 에필로그: SDKMAN!
 
-이 글을 적는 동안은 [SDKMAN!](https://sdkman.io/)의 존재를 몰랐다. 내 손이 너무 좋아서 머리를 고생 안시켰네. 다음 설정 때는 SDKMAN!을 가능한 사용해야 겠다.
+이 글을 적는 동안은 [SDKMAN!](https://sdkman.io/)의 존재를 몰랐다. 기회가 될때 SDKMAN을 써야겠다 생각했는데 진짜 기회가 생겼다. SDKMAN을 Windows에서 사용해보니 원하는 버전을 모두 설치할 수 있는 것은 아니라 내 용도에는 맞지 않았다. 결국 만능 열쇠나 은탄환은 없더라.
 
- - [SDK! 으로 Java 버전 관리하기](https://phoby.github.io/sdkman/)
+ * [Windows에 여러 자바 설치하기](http://dalinaum.github.io/java/2021/03/07/multiple-jdks-2.html) - SDKMAN으로 윈도우즈 JDK 설치기. 결국 수동 설치가 동반되었다.
+ * [SDK! 으로 Java 버전 관리하기](https://phoby.github.io/sdkman/) - [장진우](https://phoby.github.io/)씨의 SDKMAN 설명글
