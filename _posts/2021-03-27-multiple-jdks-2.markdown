@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Windows에 여러 자바 설치하기"
+title:  "윈도우에 여러 자바 설치하기"
 date:   2021-03-07 23:25:00 +0900
 categories: java
 ---
 
 [맥에 여러 자바 버전을 설치](http://dalinaum.github.io/mac/java/2020/05/20/multiple-jdks.html)했었는데 이제 윈도우즈에서도 여러 자바 버전을 사용할 필요가 생겼다. (이게 다 [코틀린 빌드](https://github.com/JetBrains/kotlin) 때문이다.)
 
-[sdkman](https://sdkman.io/)을 이용해 필요한 자바 버전을 윈도에 설치하려 한다. sdkman은 유닉스와 맥에서도 잘 돌기 때문에 유닉스와 맥에서도 유사할 것이다. `sdkman`이 `bash`와 `zip`을 요구하기 때문에 Git bash 터미널를 열었다. 아마도 Github Desktop 설치 중에 설치가 된 것 같은데 직접 설치해도 동일할 것이다.
+[sdkman](https://sdkman.io/)을 이용해 필요한 자바 버전을 윈도우에 설치하려 한다. sdkman은 유닉스와 맥에서도 잘 돌기 때문에 유닉스와 맥에서도 유사할 것이다. `sdkman`이 `bash`와 `zip`을 요구하기 때문에 Git bash 터미널를 열었다. 아마도 Github Desktop 설치 중에 설치가 된 것 같은데 직접 설치해도 동일할 것이다.
 
 이제 `bash` 의존성은 해결했으니 `zip` 의존성을 해결하자. zip을 수동으로 설치하고 싶지 않기 때문에 윈도용 패키지 관리자 [Scoop](https://scoop.sh/)을 이용하기로 한다.
 
@@ -136,7 +136,7 @@ OpenJDK 버전과 Oracle 버전이 있다. OpenJDK버전은 아래 링크에서 
  * `c:\opt\jdk7`
  * `c:\opt\jdk9`
 
-아무 디렉토리에 설치해도 상관없지만 `opt` 디렉토리 아래 설치했다. `opt`가 이런 용도로 유닉스에서 사용하는 디렉토리인데 그냥 Windows에서도 사용하고 있다.
+아무 디렉토리에 설치해도 상관없지만 `opt` 디렉토리 아래 설치했다. `opt`가 이런 용도로 유닉스에서 사용하는 디렉토리인데 그냥 윈도우에서 사용하고 있다.
 
 내 아이디는 `User`이기 때문에 아래와 같은 것이고 실제 사용에서는 `User`를 다른 경로로 바꾸어야 한다.
 
@@ -155,3 +155,5 @@ JAVA_HOME="c:\Users\User\.sdkman\candidates\java\8.0.282-open"
 ```
 
 `시스템 속성` > `환경 변수`에서 `사용자 변수`에 항목들을 설정하자. 찾기 어려우면 Windows 10 하단의 검색창에서 `시스템 환경 변수 편집`을 입력하고 시작하자.
+
+덧붙임: `Windows`를 `윈도우`라고 표기했는데 실제 마이크로소프트도 굳이 한글로 쓰면 `윈도우`라고 답변을 했고 그들의 사이트에서 가끔 쓰는 한국어 표기이기 때문이다.
