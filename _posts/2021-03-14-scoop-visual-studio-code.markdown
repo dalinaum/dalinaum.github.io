@@ -14,7 +14,7 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 iwr -useb get.scoop.sh | iex
 ```
 
-그런데 `scoop install visual-studio-code`로는 설치되지 않는다. scoop에서 앱이 모여있는 장소(저장소)를 `bucket`이라고 부른다. [Homebrew](https://brew.sh)에서 `tap`을 바꾸어 가며 비공식 앱을 설치하는 것 처럼 scoop에서는 bucket을 변경하며 다른 곳에서 받을 수 있다.
+그런데 `scoop install vscode`로는 설치되지 않는다. scoop에서 앱이 모여있는 장소(저장소)를 `bucket`이라고 부른다. [Homebrew](https://brew.sh)에서 `tap`을 바꾸어 가며 비공식 앱을 설치하는 것 처럼 scoop에서는 bucket을 변경하며 다른 곳에서 받을 수 있다.
 
 양조(brew)하는 애들은 꼭지(tap)를 바꿔가며 다른 맥주를 마시는 것이고, 아이스크림 한 스쿱(scoop, 아이스크림은 다른 통(bucket)에서 한 숟갈(scoop)씩 퍼가는 것이다.
 
