@@ -148,7 +148,7 @@ compaudit | xargs chmod g-w,o-w
 `~/.zshrc` 파일을 망가트릴테니 백업해두라고 언급했다. 이제 백업해둔 내용을 파일 아래에 추가하자. 혹시나 잊었을 경우를 위해 아라애 적어두었다. 
 
 ```sh
-export PATH=/usr/local/m1-homebrew:$PATH
+export PATH=/usr/local/m1-homebrew/bin:$PATH
 alias ibrew='arch -x86_64 /usr/local/bin/brew'
 ```
 
