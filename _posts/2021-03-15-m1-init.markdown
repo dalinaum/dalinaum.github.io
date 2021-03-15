@@ -32,7 +32,7 @@ Arm(M1)용의 Homebrew를 분리하기 위해 별도의 경로에 설치했다. 
 /bin/sh -c "$(curl -fsSL https://gist.githubusercontent.com/dalinaum/85cd0806d0d23272bc42a44375d19fbf/raw/7a198d0b90b70031ff0892c028e47a8abcf82f73/m1-homebrew.sh)"
 ```
 
-다른 경로를 원한다면 [m1-homebrew.sh](/usr/local/m1-homebrew)를 다운로드 받아 `brew_root`를 수정하고 다음과 같이 실행하자.
+다른 경로를 원한다면 [m1-homebrew.sh](https://gist.github.com/dalinaum/85cd0806d0d23272bc42a44375d19fbf)를 다운로드 받아 `brew_root`를 수정하고 다음과 같이 실행하자.
 
 ```sh
 /bin/sh m1-homebrew.sh
@@ -40,12 +40,16 @@ Arm(M1)용의 Homebrew를 분리하기 위해 별도의 경로에 설치했다. 
 
 [Google Chrome](https://www.google.com/intl/ko/chrome/)과 [Visual Studio Code](https://code.visualstudio.com)도 아래와 같이 설치했다.
 
+#### 크롬, 비주얼 스튜디오 코드 설치
+
 ```sh
 brew install --cask google-chrome
 brew install --cask visual-studio-code
 ```
 
 맥을 설치 후 먼저 [Rust](https://www.rust-lang.org)를 사용하고 싶기에 아래의 커맨드도 입력했다.
+
+#### Rust 설치
 
 ```sh
 brew install rustup
@@ -123,6 +127,8 @@ brew install iterm2
 
 iTerm2를 사용하는 경우에 zsh과 [oh-my-zsh](https://ohmyz.sh)를 설치하는 경우가 많다. zsh는 이제 맥의 기본이니 oh-my-zsh만 깔면 된다. 다음의 키워드를 입력하자. ([curl](https://curl.se)이 고생이 많다.)
 
+설치에 앞서 `~/.zshrc`파일을 백업해 두자. `oh-my-zsh`가 제대로 망가트릴 것이다.
+
 ```sh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
@@ -139,6 +145,13 @@ zsh compinit: insecure directories, run compaudit for list.
 compaudit | xargs chmod g-w,o-w
 ```
 
+`~/.zshrc` 파일을 망가트릴테니 백업해두라고 언급했다. 이제 백업해둔 내용을 파일 아래에 추가하자. 혹시나 잊었을 경우를 위해 아라애 적어두었다. 
+
+```sh
+export PATH=/usr/local/m1-homebrew:$PATH
+alias ibrew='arch -x86_64 /usr/local/bin/brew'
+```
+
 ## 키보드 변경
 
 `시스템 환경설정` > `키보드`를 열어 몇가지 설정을 기호에 맞게 설정하자.
@@ -146,3 +159,15 @@ compaudit | xargs chmod g-w,o-w
 나는 `키보드` > `보조키`에서 `한/A`를 `Control`로 바꾸었다. 원래 이 자리는 전통적으로 `Control`을 위한 자리였는데 이 자리에 별로 필요하지 않은 `Capslock`을 넣은 사람이나 `한/A` 키를 넣은 사람이나 모두 제정신은 아니라고 생각한다.
 
 `입력 소스`에서도 `한/A키로 ABC 입력소스 전환`도 비활성화했다.
+
+## 안드로이드 스튜디오 설치
+
+안드로이드 설치는 로제타 버전(인텔)을 사용해야 한다.
+
+```
+brew install --cask android-studio
+```
+
+설치된 안드로이드 스튜디오는 인텔 버전인데 안드로이드 에뮬레티어는 네이티브로 사용할 수 있다.
+
+* [M1 맥북에서 안드로이드 에뮬레이터 사용하기](http://dalinaum.github.io/android/2021/03/15/m1-android-emulatore.html)
