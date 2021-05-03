@@ -111,7 +111,7 @@ echo "alias ibrew='arch -x86_64 /usr/local/bin/brew'" >> ~/.zshrc
 맥에서 한글 상태에서 백쿼트를 원화로 바꾼다. 매우 개떡같다. 터미널에서 아래 커맨드를 입력해서 수정하자.
 
 ```sh
-/bin/sh -c "$(curl -fsSL https://gist.githubusercontent.com/dalinaum/5440f140a68f91a197028eba083cf8bc/raw/4ea6f782167d81e3cf290e69a28d6d2b82a15ac6/no-won.sh)"
+/bin/sh -c "$(curl -fsSL https://gist.githubusercontent.com/dalinaum/5440f140a68f91a197028eba083cf8bc/raw/259f2382253db541dcb1f99168f1f13e78435433/no-won.sh)"
 ```
 
 이제 터미널이나 앱을 종료 후 다시 켜면 백쿼트를 사용할 수 있다.
