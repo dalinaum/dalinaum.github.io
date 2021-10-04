@@ -5,6 +5,10 @@ date:   2021-03-15 00:30:00 +0900
 categories: mac
 ---
 
+경고:
+
+[oh-my-zsh](https://ohmyz.sh)를 설치할 사람은 아래의 `oh-my-zsh`부터 설치하는 것이 좋다. `~/.zshrc` 파일의 내용을 지우고 자신의 내용을 쓰기 때문이다. 만약 늦게 설치하는 경우 `~/.zshrc` 파일의 내용을 어디에 적어두고 나중에 추가하자. 문서의 순서를 바꿀까 고민했지만 모두가 설치하는 확장은 아니기 때문에 지금의 순서를 유지한다.
+
 ## Homebrew 설치
 
 2011년 1월 29일에 Macports를 버리고 [Homebrew](https://brew.sh) 가야한다는 글을 쓴적이 있다.
@@ -107,7 +111,7 @@ echo "alias ibrew='arch -x86_64 /usr/local/bin/brew'" >> ~/.zshrc
 맥에서 한글 상태에서 백쿼트를 원화로 바꾼다. 매우 개떡같다. 터미널에서 아래 커맨드를 입력해서 수정하자.
 
 ```sh
-/bin/sh -c "$(curl -fsSL https://gist.githubusercontent.com/dalinaum/5440f140a68f91a197028eba083cf8bc/raw/4ea6f782167d81e3cf290e69a28d6d2b82a15ac6/no-won.sh)"
+/bin/sh -c "$(curl -fsSL https://gist.githubusercontent.com/dalinaum/5440f140a68f91a197028eba083cf8bc/raw/259f2382253db541dcb1f99168f1f13e78435433/no-won.sh)"
 ```
 
 이제 터미널이나 앱을 종료 후 다시 켜면 백쿼트를 사용할 수 있다.
@@ -145,7 +149,7 @@ zsh compinit: insecure directories, run compaudit for list.
 compaudit | xargs chmod g-w,o-w
 ```
 
-`~/.zshrc` 파일을 망가트릴테니 백업해두라고 언급했다. 이제 백업해둔 내용을 파일 아래에 추가하자. 혹시나 잊었을 경우를 위해 아라애 적어두었다. 
+`~/.zshrc` 파일을 망가트릴테니 백업해두라고 언급했다. 이제 백업해둔 내용을 파일 아래에 추가하자. 혹시나 잊었을 경우를 위해 아래에 적어두었다.
 
 ```sh
 export PATH=/usr/local/m1-homebrew/bin:$PATH
