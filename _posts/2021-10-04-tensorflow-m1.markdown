@@ -35,13 +35,13 @@ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/apple/tensorflow_macos/master/scripts/download_and_install.sh)"
 ```
 
-나는 파이썬 버전이 맞지 않아 다음의 명령어로 설치를 마무리했다.
+나는 파이썬 버전이 맞지 않아 다음의 명령어로 설치를 마무리했다. `/var/folders/zz/lgvb77nx6d53ppgc08_yp7v00000gn/T/tmp.RN5VHiRicK/` 등의 임시폴더는 각자 다르기 떄문에 에러 메시지를 확인하자.
 
 ```sh
 /var/folders/zz/lgvb77nx6d53ppgc08_yp7v00000gn/T/tmp.RN5VHiRicK/tensorflow_macos/install_venv.sh --prompt --python /Users/dalinaum/.pyenv/shims/python
 ```
 
-`--python` 뒤에 `pyenv`가 설치한 파이썬 경로를 지정했다.
+`--python` 뒤에 `pyenv`가 설치한 파이썬 경로를 지정했다. `/Users/dalinaum/.pyenv/shims/python` 이 경로도 사용자마다 다를 것이다.
 
 설치가 완료되면 텐서플로우 환경을 사용해보자.
 
