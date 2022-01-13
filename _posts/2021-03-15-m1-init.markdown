@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "M1, M1 Pro, M1 Max 맥북에서 처음해야하는 일 - Homebrew부터"
-date:   2022-01-13 22:26:00 +0900
+date:   2021-03-15 00:30:00 +0900
 categories: mac
 ---
 
