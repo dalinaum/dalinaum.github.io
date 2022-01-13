@@ -5,6 +5,12 @@ date:   2021-03-15 20:45:00 +0900
 categories: android
 ---
 
+**아래의 내용은 모두 오래된 내용이다. Arm Preview가 적용된 Artic Fox 버전의 안드로이드 스튜디오는 기본으로 Arm 에뮬레이터를 설치한다. 이 글은 이제 필요없다. 아래 링크한 글을 참고하라.**
+
+* [M1, M1 Pro, M1 Max 맥북에서 처음해야하는 일 - Homebrew부터](http://dalinaum.github.io/mac/2021/03/15/m1-init.html)
+
+---
+
 구글의 [안드로이드 에뮬레이터 M1 프리뷰](https://github.com/google/android-emulator-m1-preview) 저장소가 있다. 역시나 프리뷰이구나 생각할 수 있는데 인상적인 문구 하나가 추가되어 있다.
 
 ![더 이상 프리뷰 필요없어요.]({{ "/assets/9-no-preview.png" | absolute_url }})

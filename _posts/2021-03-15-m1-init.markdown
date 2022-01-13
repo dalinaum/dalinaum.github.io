@@ -116,15 +116,13 @@ alias ibrew='arch -x86_64 /usr/local/bin/brew'
 
 ## 안드로이드 스튜디오 설치
 
-안드로이드 설치는 로제타 버전(인텔)을 사용해야 한다.
+Arm 버전 안드로이드 설치도 Homebrew로 쉽게할 수 있다.
 
 ```
 brew install --cask android-studio
 ```
 
-설치된 안드로이드 스튜디오는 인텔 버전인데 안드로이드 에뮬레이터는 네이티브(M1)로 사용할 수 있다.
-
-* [M1 맥북에서 안드로이드 에뮬레이터 사용하기](http://dalinaum.github.io/android/2021/03/15/m1-android-emulatore.html)
+안드로이드 에뮬레이터도 기본으로 Arm용으로 설치되니 이제 더 이상 고민할 내용이 없다.
 
 ## 굳이 Arm용 Homebrew와 인텔 버전을 함께 쓰기
 
