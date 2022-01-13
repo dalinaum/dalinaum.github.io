@@ -9,6 +9,8 @@ categories: android
 
 * [M1, M1 Pro, M1 Max 맥북에서 처음해야하는 일 - Homebrew부터](http://dalinaum.github.io/mac/2021/03/15/m1-init.html)
 
+더 이상 추가적인 설정이 필요없는 것을 알려준 [생존코딩](https://survivalcoding.com/)의 오준석님에게 감사를 전한다.
+
 ---
 
 구글의 [안드로이드 에뮬레이터 M1 프리뷰](https://github.com/google/android-emulator-m1-preview) 저장소가 있다. 역시나 프리뷰이구나 생각할 수 있는데 인상적인 문구 하나가 추가되어 있다.
