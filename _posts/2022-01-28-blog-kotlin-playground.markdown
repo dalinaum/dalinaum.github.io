@@ -25,12 +25,7 @@ categories: blog
 필요한 것은 두개의 코드 블록이다. 먼저 자바스크립트 블록.
 
 ```html
-<script src="https://unpkg.com/kotlin-playground@1"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    KotlinPlayground('.kotlin-playground');
-  });
-</script>
+<script src="https://unpkg.com/kotlin-playground@1" data-selector=".kotlin-playground"></script>
 ```
 
 이제 `kotlin-playground` 클래스에 대해 코틀린 플레이그라운드가 적용된다.
