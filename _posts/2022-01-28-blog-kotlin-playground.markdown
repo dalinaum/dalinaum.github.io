@@ -10,14 +10,14 @@ categories: blog
 그런데 자신의 블로그에도 코틀린 플레이그라운드 블록을 넣어서 코틀린 코드를 직접 수행해볼 수 있다.
 
 <div class="kotlin-playground" >
-    fun main() {
-        val name = "stranger"        // Declare your first variable
-        println("Hi, $name!")        // ...and use it!
-        print("Current count:")
-        for (i in 0..10) {           // Loop over a range from 0 to 10
-            print(" $i")
-        }
+fun main() {
+    val name = "stranger"        // Declare your first variable
+    println("Hi, $name!")        // ...and use it!
+    print("Current count:")
+    for (i in 0..10) {           // Loop over a range from 0 to 10
+        print(" $i")
     }
+}
 </div>
 
 어떻게 하는지 알아보자.
@@ -32,14 +32,14 @@ categories: blog
 
 ```html
 <div class="kotlin-playground" >
-    fun main() {
-        val name = "stranger"        // Declare your first variable
-        println("Hi, $name!")        // ...and use it!
-        print("Current count:")
-        for (i in 0..10) {           // Loop over a range from 0 to 10
-            print(" $i")
-        }
+fun main() {
+    val name = "stranger"        // Declare your first variable
+    println("Hi, $name!")        // ...and use it!
+    print("Current count:")
+    for (i in 0..10) {           // Loop over a range from 0 to 10
+        print(" $i")
     }
+}
 </div>
 ```
 
@@ -62,26 +62,26 @@ div 태그에 `class="kotlin-playground"`를 기입해 클래스를 지정했다
 
 ```html
 <div class="kotlin-playground" theme="darcula">
-    fun main() {
-        val name = "stranger"        // Declare your first variable
-        println("Hi, $name!")        // ...and use it!
-        print("Current count:")
-        for (i in 0..10) {           // Loop over a range from 0 to 10
-            print(" $i")
-        }
+fun main() {
+    val name = "stranger"        // Declare your first variable
+    println("Hi, $name!")        // ...and use it!
+    print("Current count:")
+    for (i in 0..10) {           // Loop over a range from 0 to 10
+        print(" $i")
     }
+}
 </div>
 ```
 
 `theme="darcula"` 속성을 추가했다.
 
 <div class="kotlin-playground" theme="darcula">
-    fun main() {
-        val name = "stranger"        // Declare your first variable
-        println("Hi, $name!")        // ...and use it!
-        print("Current count:")
-        for (i in 0..10) {           // Loop over a range from 0 to 10
-            print(" $i")
-        }
+fun main() {
+    val name = "stranger"        // Declare your first variable
+    println("Hi, $name!")        // ...and use it!
+    print("Current count:")
+    for (i in 0..10) {           // Loop over a range from 0 to 10
+        print(" $i")
     }
+}
 </div>
