@@ -3,8 +3,7 @@ layout: post
 title:  "점프 투 파이썬: 4-1장 강의"
 date:   2022-11-09 21:32:00 +0900
 categories: python
-image:
-    path: jpp41.png
+image: /assets/jpp41.png
 ---
 
 박응용님의 허락을 받아 [점프 투 파이썬](https://wikidocs.net/book/1) 강의 녹화를 공개합니다.
