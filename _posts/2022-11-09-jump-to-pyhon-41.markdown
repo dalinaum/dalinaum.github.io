@@ -16,3 +16,5 @@ image: jpp41.png
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0b7xo33cfa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 썸네일 제작에는 [Canva](https://www.canva.com/)를 이용했습니다.
+
+자막 생성에는 [Vrew](https://vrew.voyagerx.com/ko/) 서비스의 도움을 받았습니다.
