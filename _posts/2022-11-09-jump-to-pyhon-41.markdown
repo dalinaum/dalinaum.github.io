@@ -11,6 +11,7 @@ image: jpp41.png
 
 * [점프 투 파이썬: 4-1장 강의](https://dalinaum.github.io/python/2022/11/09/jump-to-pyhon-41.html)
 * [점프 투 파이썬: 4-2장 강의](https://dalinaum.github.io/python/2022/11/11/jump-to-pyhon-42.html)
+* [점프 투 파이썬: 4-3장 강의](https://dalinaum.github.io/python/2022/11/12/jump-to-pyhon-43.html)
 
 ## 점프 투 파이썬 4-1장 함수
 
