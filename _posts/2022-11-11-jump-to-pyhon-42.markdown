@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "점프 투 파이썬: 4-1장 강의"
-date:   2022-11-09 21:32:00 +0900
+title:  "점프 투 파이썬: 4-2장 강의"
+date:   2022-11-11 03:23:00 +0900
 categories: python
 image: jpp41.png
 ---
@@ -14,9 +14,11 @@ image: jpp41.png
 
 ## 점프 투 파이썬 4-1장 함수
 
-아래 영상은 [4-1장 함수](https://wikidocs.net/24)에 대한 내용입니다.
+아래 영상은 [4-2장 사용자 입력과 출력](https://wikidocs.net/25)에 대한 내용입니다.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0b7xo33cfa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+이번 편의 내용은 조금 짧네요.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L7E9l_cU17U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 썸네일 제작에는 [Canva](https://www.canva.com/)를 이용했습니다.
 
