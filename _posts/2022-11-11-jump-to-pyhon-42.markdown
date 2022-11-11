@@ -3,7 +3,7 @@ layout: post
 title:  "점프 투 파이썬: 4-2장 강의"
 date:   2022-11-11 03:23:00 +0900
 categories: python
-image: jpp41.png
+image: jpp42.png
 ---
 
 박응용님의 허락을 받아 [점프 투 파이썬](https://wikidocs.net/book/1) 강의 녹화를 공개합니다.
@@ -12,7 +12,7 @@ image: jpp41.png
 * [점프 투 파이썬: 4-1장 강의](https://dalinaum.github.io/python/2022/11/09/jump-to-pyhon-41.html)
 * [점프 투 파이썬: 4-2장 강의](https://dalinaum.github.io/python/2022/11/11/jump-to-pyhon-42.html)
 
-## 점프 투 파이썬 4-1장 함수
+## 점프 투 파이썬 4-2장 사용자 입력과 출력
 
 아래 영상은 [4-2장 사용자 입력과 출력](https://wikidocs.net/25)에 대한 내용입니다.
 
