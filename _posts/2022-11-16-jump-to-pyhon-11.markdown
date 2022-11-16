@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "점프 투 파이썬: 1-1장 강의 파이썬이란?"
-date:   2022-11-11 19:02:00 +0900
+date:   2022-11-16 19:02:00 +0900
 categories: python
 image: jpp11.png
 ---

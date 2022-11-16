@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "점프 투 파이썬: 1-3장 파이썬으로 무엇을 할 수 있을까?"
-date:   2022-11-11 19:28:00 +0900
+date:   2022-11-16 19:28:00 +0900
 categories: python
 image: jpp13.png
 ---
