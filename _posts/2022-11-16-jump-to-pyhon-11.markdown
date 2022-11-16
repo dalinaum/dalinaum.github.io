@@ -13,6 +13,7 @@ image: jpp11.png
 * [1-1장 파이썬이란?](https://dalinaum.github.io/python/2022/11/16/jump-to-pyhon-11.html)
 * [1-2장 파이썬의 특징](https://dalinaum.github.io/python/2022/11/16/jump-to-pyhon-12.html)
 * [1-3장 파이썬으로 무엇을 할 수 있을까?](https://dalinaum.github.io/python/2022/11/16/jump-to-pyhon-13.html)
+* [1-4장 파이썬 설치하기](https://dalinaum.github.io/python/2022/11/16/jump-to-pyhon-14.html)
 * [4-1장 함수](https://dalinaum.github.io/python/2022/11/09/jump-to-pyhon-41.html)
 * [4-2장 사용자 입력과 출력](https://dalinaum.github.io/python/2022/11/11/jump-to-pyhon-42.html)
 * [4-3장 파일 읽고 쓰기](https://dalinaum.github.io/python/2022/11/12/jump-to-pyhon-43.html)

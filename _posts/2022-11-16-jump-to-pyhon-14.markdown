@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "점프 투 파이썬: 1-2장 파이썬의 특징"
-date:   2022-11-16 19:09:00 +0900
+title:  "점프 투 파이썬: 1-4장 파이썬 설치하기"
+date:   2022-11-16 20:39:00 +0900
 categories: python
-image: jpp12.png
+image: jpp14.png
 ---
 
 박응용님의 허락을 받아 [점프 투 파이썬](https://wikidocs.net/book/1) 강의 녹화를 공개합니다.
@@ -18,11 +18,11 @@ image: jpp12.png
 * [4-2장 사용자 입력과 출력](https://dalinaum.github.io/python/2022/11/11/jump-to-pyhon-42.html)
 * [4-3장 파일 읽고 쓰기](https://dalinaum.github.io/python/2022/11/12/jump-to-pyhon-43.html)
 
-## 점프 투 파이썬: 1-2장 파이썬의 특징
+## 점프 투 파이썬: 1-4장 파이썬 설치하기
 
-아래 영상은 [1-2장 파이썬의 특징](https://wikidocs.net/6)에 대한 내용입니다.
+아래 영상은 [1-4장 파이썬 설치하기](https://wikidocs.net/8)에 대한 내용입니다.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pFCHn0F-nuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YmS32bo3Uas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 썸네일 제작에는 [Canva](https://www.canva.com/)를 이용했습니다.
 
