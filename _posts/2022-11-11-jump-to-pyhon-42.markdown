@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "점프 투 파이썬: 4-2장 강의"
+title:  "점프 투 파이썬: 4-2장 사용자 입력과 출력"
 date:   2022-11-11 03:23:00 +0900
 categories: python
 image: jpp42.png
@@ -10,7 +10,7 @@ image: jpp42.png
 허락을 해주신 박응용님에게 감사드립니다.
 
 * [전체 영상 플레이리스트](https://www.youtube.com/playlist?list=PL_fI-_lNaZ3h-6BGbyK6E7ucc3CXJa6Ql)
-* [1-1장 강의 파이썬이란?](https://dalinaum.github.io/python/2022/11/16/jump-to-pyhon-11.html)
+* [1-1장 파이썬이란?](https://dalinaum.github.io/python/2022/11/16/jump-to-pyhon-11.html)
 * [1-2장 파이썬의 특징](https://dalinaum.github.io/python/2022/11/16/jump-to-pyhon-12.html)
 * [1-3장 파이썬으로 무엇을 할 수 있을까?](https://dalinaum.github.io/python/2022/11/16/jump-to-pyhon-13.html)
 * [4-1장 함수](https://dalinaum.github.io/python/2022/11/09/jump-to-pyhon-41.html)
