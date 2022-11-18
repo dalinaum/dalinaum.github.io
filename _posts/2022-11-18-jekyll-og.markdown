@@ -91,7 +91,7 @@ image: jkog.png
 
 `og:image` 항목은 `page.image`가 있을 경우만 추가했다.
 
-`pretend:`를 쓸 수 있겠지만 중간에 `/assets/`라고 하드 코딩한 것도 있어서 `{{ site.url }}{{ site.baseurl }}/assets/{{ page.image }}`로 쭉 나열했다. ``assets`에 있다고 가정하고 `image: jkog.png`라고 블로그 포스트 상단에 적으면 `https://dalinaum.github.io/assets/jokg.png`로 합성이 된다.
+`pretend:`를 쓸 수 있겠지만 중간에 `/assets/`라고 하드 코딩한 것도 있어서 `{{ site.url }}{{ site.baseurl }}/assets/{{ page.image }}`로 쭉 나열했다. `assets`에 있다고 가정하고 `image: jkog.png`라고 블로그 포스트 상단에 적으면 `https://dalinaum.github.io/assets/jokg.png`로 합성이 된다.
 
 ## 지킬 관련글
  * [지킬에 오픈그래프 이미지 추가하기](https://dalinaum.github.io/tool/2022/11/18/jekyll-og.html)
