@@ -102,3 +102,7 @@ layout: default
 깃헙에 배포하니 제대로 나온다. 간단하네.
 
 ![페이지네이션 적용된 블로그]({{ "/assets/4-pagination.png" | absolute_url }}) 페이지네이션이 적용된 블로그
+
+## 지킬 관련글
+ * [지킬에 오픈그래프 이미지 추가하기](https://dalinaum.github.io/tool/2022/11/18/jekyll-og.html)
+ * [Jekyll 블로그 페이지네이션 설정](https://dalinaum.github.io/tool/2021/02/11/jekyll-pagination.html)

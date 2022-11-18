@@ -41,6 +41,8 @@ image: jkog.png
 
 이 `image`는 `page.image`를 통해 참고할 수 있다.
 
+이렇게 `page.image`를 정의한 이후 테마인 `_includes/head.html`을 수정했다. 아래의 내용을 참고하라.
+
 ```html
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
