@@ -71,7 +71,7 @@ image: jkog.png
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 ```
 
-`og:title`을 설정했는데 `{% if page.title %}` 즉, `page.title`이 있으면 그걸 쓰고, 없으면 `site.title`를 쓰도록 했다.
+`og:title`을 설정했는데 `page.title`이 있으면 그걸 쓰고, 없으면 `site.title`를 쓰도록 했다.
 
 `og.description`을 살펴보자.
 
