@@ -17,6 +17,8 @@ image: jpp43.png
 * [1-5장 파이썬 둘러보기](https://dalinaum.github.io/python/2022/11/17/jump-to-pyhon-15.html)
 * [1-6장 파이썬과 에디터](https://dalinaum.github.io/python/2022/11/18/jump-to-pyhon-16.html)
 * [2-1장 자료형](https://dalinaum.github.io/python/2022/11/29/jump-to-pyhon-21.html)
+* [2-2장 문자열 자료형](https://dalinaum.github.io/python/2022/12/12/jump-to-pyhon-22.html)
+* [2-3장 리스트 자료형](https://dalinaum.github.io/python/2022/12/12/jump-to-pyhon-23.html)
 * [4-1장 함수](https://dalinaum.github.io/python/2022/11/09/jump-to-pyhon-41.html)
 * [4-2장 사용자 입력과 출력](https://dalinaum.github.io/python/2022/11/11/jump-to-pyhon-42.html)
 * [4-3장 파일 읽고 쓰기](https://dalinaum.github.io/python/2022/11/12/jump-to-pyhon-43.html)

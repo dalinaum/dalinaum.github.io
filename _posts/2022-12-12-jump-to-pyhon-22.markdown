@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "점프 투 파이썬: 1-6장 파이썬과 에디터"
-date:   2022-11-18 15:31:00 +0900
+title:  "점프 투 파이썬: 2-2장 문자열 자료형"
+date:   2022-12-12 15:47:00 +0900
 categories: python
-image: jpp16.png
+image: jpp22.png
 ---
 
 박응용님의 허락을 받아 [점프 투 파이썬](https://wikidocs.net/book/1) 강의 녹화를 공개합니다.
@@ -23,11 +23,11 @@ image: jpp16.png
 * [4-2장 사용자 입력과 출력](https://dalinaum.github.io/python/2022/11/11/jump-to-pyhon-42.html)
 * [4-3장 파일 읽고 쓰기](https://dalinaum.github.io/python/2022/11/12/jump-to-pyhon-43.html)
 
-## 점프 투 파이썬: 1-6장 파이썬과 에디터
+## 점프 투 파이썬: 2-2장 문자열 자료형
 
-아래 영상은 [1-6장 파이썬과 에디터](https://wikidocs.net/17684)에 대한 내용입니다.
+아래 영상은 [2-2장 문자열 자료형](https://wikidocs.net/13)에 대한 내용입니다.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/meJGRyyXY54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/STGCSIt3nsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 썸네일 제작에는 [Canva](https://www.canva.com/)를 이용했습니다.
 
