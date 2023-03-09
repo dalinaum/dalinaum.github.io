@@ -8,30 +8,8 @@ layout: default
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
-  <div id="fb-root"></div>
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '452440771587365',
-        xfbml      : true,
-        version    : 'v2.3'
-      });
-    };
-
-    (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "//connect.facebook.net/en_US/sdk.js";
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-  </script>
-
   <article class="post-content">
     {{ content }}
-    <div class="fb-like" data-href="{{ site.url }}{{ page.url }}"  data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-    <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-numposts="5" data-width="100%" data-colorscheme="light"></div>
-
   </article>
 
 </div>
