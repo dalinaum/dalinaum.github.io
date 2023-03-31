@@ -10,9 +10,9 @@ permalink: /about/
 
 ## Classes
 
- * [UPSKILL : 상위 1% 개발자들의 생산성 향상을 위한 Jetpack Compose | 패스트캠퍼스](https://fastcampus.co.kr/dev_online_upcompose)
- * [FastCampus - The RED : Mastering Kotlin Coroutines & Flow for effective asynchronous processing](https://fastcampus.co.kr/dev_red_kyu)
- * [FastCampus - Learn Android App Development in 35 Projects. (feat. Jetpack Compose) Super Gap Package](https://fastcampus.co.kr/dev_online_androidappfinal)
+ * [UPSKILL : 상위 1% 개발자들의 생산성 향상을 위한 Jetpack Compose](https://fastcampus.co.kr/dev_online_upcompose) - FastCampus
+ * [The RED : Mastering Kotlin Coroutines & Flow for effective asynchronous processing](https://fastcampus.co.kr/dev_red_kyu) - FastCampus
+ * [Learn Android App Development in 35 Projects. (feat. Jetpack Compose) Super Gap Package](https://fastcampus.co.kr/dev_online_androidappfinal) - FastCampus
 
 ## Talks
 
