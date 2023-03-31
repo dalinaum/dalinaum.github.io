@@ -8,6 +8,12 @@ permalink: /about/
 
 * [코틀린/자바를 한 눈에 안드로이드 앱 프로그래밍](http://dalinaum.github.io/android/2020/09/17/android-book.html) ([유튜브 강좌](https://www.youtube.com/watch?v=PM6SVTLoUZM&list=PL_fI-_lNaZ3jzGagjlDqGJmOC2_FoEjoX)) - 예문사
 
+## Classes
+
+ * [UPSKILL : 상위 1% 개발자들의 생산성 향상을 위한 Jetpack Compose | 패스트캠퍼스](https://fastcampus.co.kr/dev_online_upcompose)
+ * [FastCampus - The RED : Mastering Kotlin Coroutines & Flow for effective asynchronous processing](https://fastcampus.co.kr/dev_red_kyu)
+ * [FastCampus - Learn Android App Development in 35 Projects. (feat. Jetpack Compose) Super Gap Package](https://fastcampus.co.kr/dev_online_androidappfinal)
+
 ## Talks
 
 * [ZIP: Data Compressions (20분만에 배우는 압축 알고리즘)](https://www.youtube.com/watch?v=Yc_orrKXn1I)
