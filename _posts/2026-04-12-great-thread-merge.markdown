@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "그레이트 스레드 머지 (Great Thread Merge) — 통합본"
+title:  "그레이트 스레드 머지 (Great Thread Merge)"
 date:   2026-04-12 20:59:31 +0900
 categories: flutter
 mermaid: true
